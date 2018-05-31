@@ -1,0 +1,93 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{  
+
+background: url(../pictures/fundo.png) relative center; 
+background-image: url(../pictures/fundo.png); 
+background-attachment: relative; 
+background-position: center; 
+}
+
+
+
+.container{
+    position: relative;
+    width: 30%;
+    height: 50%;
+    background-color: white;
+    border-radius: 10px;
+    top: 24%;
+    left: 37%;
+    text-align: center;
+    
+}
+
+.container h1{
+    border-top: 10px solid white;
+    position: relative;
+    font-family: arial; 
+    font-size: 180%;
+}
+input[type="text"] {
+    position: relative;
+    height: 10%;
+    width: 80%;
+    border: 0px;
+    outline: none;
+    border-bottom: 1px solid black;
+    margin-top: 20px;
+}
+
+input[type="password"]{
+    position: relative;
+    height: 10%;
+    width: 80%;
+    border: 0px;
+    outline: none;
+    border-bottom: 1px solid black;
+    margin-top: 5%;
+}
+input[type="submit"]{
+    position: relative;
+    background-color: #036;
+    color: white;
+    width: 80%;
+    height: 9%;
+    border-radius: 17px;
+    border: none;
+    font-family: arial;
+    font-size: 15px;
+    margin-top: 15%;
+    
+}
+input[type="submit"]:hover{
+    background-color: #00264d;
+}
+
+button[type="button"]{
+    position: relative;
+    background-color: #036;
+    color: white;
+    width: 80%;
+    height: 9%;
+    border-radius: 17px;
+    border: none;
+    font-family: arial;
+    font-size: 15px;
+    margin-top: 1%;
+    
+}
+
+button[type="button"]:hover{
+    background-color: #00264d;
+}
+
+.botao a{
+    text-decoration: none;
+    color: white;
+    font-family: arial;
+}
+

@@ -1,0 +1,29 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color:url(../pictures/fundo.png) fixed center;
+    background-image: url(../pictures/fundo.png);
+}
+
+.box{
+    position: relative;
+    width: 25em;
+    height: 15em;
+    background-color: white;
+    border-radius: 5px;
+    text-align: center;
+}
+
+input[type="text"]{
+    position: relative;
+    height: 10%;
+    width: 80%;
+    border: 0px;
+    outline: none;
+    border-bottom: 1px solid black;
+    margin-top: 15%;
+}
+.box label{
+    font-family: arial;
+    font-size: 25px;
+}

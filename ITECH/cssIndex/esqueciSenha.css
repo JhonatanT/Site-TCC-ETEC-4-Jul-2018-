@@ -1,0 +1,84 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color: url(../pictures/fundo.png) fixed center;
+    background-image: url(../pictures/fundo.png);
+}
+.display{
+    display: block;
+}
+#box{
+    position: relative;
+    background-color: white;
+    width: 450px;
+    height: 250px;
+    top: 250px;
+    left: 35%;
+    border-radius: 7px;
+    border-left: 50px solid white;
+    border-right: 10px white;
+    z-index: 1000;
+}
+
+#box input{
+    position: absolute;
+    height: 40px;
+    width: 400px;
+    top: 80px;
+    left: 10px;
+    border: 0px;
+    outline: none;
+    border-bottom: 1px solid black;
+    margin-top: 20px;
+}
+
+#box button{
+    position: absolute;
+    background-color: #036;
+    color: white;
+    width: 420px;
+    height: 40px;
+    border-radius: 17px;
+    border: none;
+    margin-top: 30px;
+    font-family: arial;
+    font-size: 16px;
+    top: 150px;
+}
+
+#box h1{
+    position: absolute;
+    font-family: arial;
+    left: 50px;
+}
+
+#box button:hover{
+    background-color: #00264d;
+    
+}
+#balao{
+    position: fixed;
+    background: #1a1a1a;
+    padding: 1px;
+    width: 300px;
+    top: 345px;
+    left: 1050px;
+    color: white;
+    font-family: arial;
+    font-size: 12px;
+    text-align: center;
+    z-index: 1001;
+    display: none;
+}
+
+#balao:before{
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    left: -10px;
+    top: 19px;
+    background: #1a1a1a;
+   -webkit-transform: rotate(45deg);
+    
+}

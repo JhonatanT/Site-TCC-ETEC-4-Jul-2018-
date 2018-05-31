@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>GENNIUS</title>
+        <meta charset="UTF-8"/>
+        
+        <!--links-->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../ITECH/cssIndex/estilo2.css">
+        <link rel="stylesheet" href="../ITECH/cssIndex/estilo.css">
+        <link rel="stylesheet" href="../ITECH/cssIndex/nivo-slider.css">
+        <link rel="stylesheet" href="../ITECH/cssIndex/mi-slider.css">
+        <link rel="stylesheet" href="../ITECH/cssIndex/index_style.css">
+		<link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon" />
+        
+        <!--JQuerys-->
+        <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js" type="text/javascript"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+        <script src="cssIndex/jquery.nivo.slider.js"></script>
+        <script src='cssIndex/script.js'></script>
+        
+        <!--função-->
+        <script>
+          jQuery(document).ready(function($) {
+            //quando eu clicar na classe scroll então faça esse evento
+            $(".scroll").click(function(event){
+                event.preventDefault();
+                $('html,body').animate({scrollTop:$(this.hash).offset().top}, 500);
+            });
+          });
+        </script>
+        
+        <!--função-->
+        <script type="text/javascript">
+            $(window).on('load', function() {
+            $('#slider').nivoSlider();
+            });
+        </script>
+    </head>
+    <body>
+        
+        <!--Menu-->
+        <header id="hader">
+          <nav >
+            <ul class="menu">
+                <!--Links-->
+                <a class="scroll" href='#banner'><li class="inicio">INÍCIO
+				<ul class="submenu">
+						<a class="scroll" href='#Sobre'><li>SOBRE</li></a>
+						<a class="scroll" href='#Projetos'><li>PROJETOS</li></a>
+						<a class="scroll" href='#Clientes'><li>CLIENTES</li></a>
+					</ul>
+				
+				</li></a>
+                <a href = "DESEMPENHO.html"><li>DESEMPENHO</li></a>
+                <a href = "EXERCICIOS.HTML"><li>EXERCÍCIOS</li></a>
+            </ul>
+              <!--Logo que sobe e desce-->
+              <a class="scroll" href='#banner'><img id='logo' src='pictures/logo.png'></a>
+
+            <ul class="menu">
+                <!--links-->
+				<a href = "VESTIBULARES.html"><li>VESTIBULARES</li></a>
+                <a href = "AJUDA.html"><li>AJUDA</li></a>
+                <a href = "FaleConosco.html"><li>FALE CONOSCO</li></a>
+            </ul>
+              <a href = "login.html" class="botao">Entrar</a>
+        </nav>
+            
+        </header>
+        
+        <!--sessão que chama o fundo que fica o icone-->
+        <section id="banner">
+        </section>
+        
+        <!--Corpo do site-->
+        <div id="main">
+            
+            <!--topo do Sobre-->
+            <div class="w3-container containerLogo" id="Sobre" >
+            </div>
+            
+                <!--div sobre-->
+                <div class="w3-container escuro" align="left">
+                    <br><br>
+                    <!-- Titulo Sobre Nós-->
+                    <h1 class=" w3-container centralizadoEscuro">SOBRE NÓS</h1>
+                    <!--Div para adicionar textos-->
+                    <div class="w3-container centro p" align="center">
+                        <p>Somos uma empresa tecnológica focada no desenvolvimento<br> 
+                        de softwares, desginer de sites e manutenção de computadores.<br> 
+                        Fundada em 2017, atende com dedicação e compromentimento,<br>
+                        visando uma parceria íntegra e ética para com seus clientes<br>
+                        garantindo o melhor serviço do ramo tecnológico</p>
+
+                        <p><strong>Qual o significado de ITech Force?</strong></p>
+
+                        <p><strong>I: </strong>Inteligência.
+                        <strong>Tech: </strong>Tecnologia.
+                        <strong>Force: </strong>Força.</p>
+                    </div>
+                    <br><br><br>
+                </div>
+                
+                <!--topo do Projetos-->
+                <div class="w3-container containerLogo" id="Projetos" >
+                </div>
+
+                <!--div projetos-->
+                <div class="w3-container claro" align="left">
+                    <br><br>
+                    <!-- Titulo Projetos-->
+                    <h1 class="w3-container centralizado" >PROJETOS</h1>
+                    <!--Div para adicionar textos-->
+                        <div class="w3-container centro p" align="center">
+                        <p>Estamos desenvolvendo um projeto intitulado como <strong>GENIUS</strong>, onde ajudamos pessoas<br> 
+                        que querem estudar, mas não tem acesso a internet,<br> 
+                        ou não sabem o que estudar. O projeto é voltado para estudos de<br>
+                        vestibulares/vestibulinhos como por exemplo:
+                        <!--Para deixar a letra em negrito-->
+                        <strong> ENEM, FUVEST, SENAI e ETEC.</strong><br>
+                        Esses são os vestibulares iniciais, <br>
+                        O programa ainda está em fase de desenvolvimento, então estamos desenvolvendo as funcionalidades do mesmo.<br>
+                        <br><br>
+                        Veja a interface gráfica dele:<br><br>
+                        <!--Slide-->
+                        <div class="slider-wrapper theme-mi-slider ">
+                            <div id="slider" class="nivoSlider">
+                                <img src="../ITECH/imagens/02.png" alt="" title="#htmlcaption2" />
+                                <img src="../ITECH/imagens/01.png" alt="" title="#htmlcaption1" />
+                                <img src="../ITECH/imagens/03.png" alt="" title="#htmlcaption3" />
+                                <img src="../ITECH/imagens/04.png" alt="" title="#htmlcaption4" />
+                            </div>
+                        </div>
+                    </div>
+                    <br><br><br>
+                </div>
+                
+                <!--topo do Clientes-->
+                <div class="w3-container containerLogo" id="Clientes" >
+                </div>
+                
+                <!--div Clientes-->
+                <div class="w3-container escuro" align="left">
+                    <br><br>
+                    <h1 class="w3-container centralizadoEscuro">CLIENTES</h1>
+                        <div class="w3-container centro p" align="center">
+                        <p>A nossa empresa tem como público alvo pessoas <br> 
+                        interessadas em softwares,manutenção e Design de sites<br> 
+                        para sua empresa, projetos pessoais ou academicos.<br><br>
+                        <strong>Porque nos contratar?</strong><br><br>
+                        Somos uma empresa constituida por seis<br>
+                        desenvolvedores profissionais esforçados, com foco e<br>
+                        compromentimento em cada projeto que desenvolvemos,<br>
+                        procurando sempre o melhor para nossos clientes.</p>
+                        <br><br>
+                        <p>O publico do projeto Genius são: estudantes de ensino médio,<br> 
+                        adultos e patrocinadores que queiram ajudar com a continuação de nosso projeto.</p> 
+                        <br><br>
+                    </div>
+                    <br><br><br>
+                </div>
+                
+                <!--Topo do Fale Conosco-->
+                <!--div Fale Conosco-->
+        </div>
+    </body>
+</html>
