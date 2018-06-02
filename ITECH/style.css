@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?i7m7e2');
-  src:  url('fonts/icomoon.eot?i7m7e2#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?i7m7e2') format('truetype'),
-    url('fonts/icomoon.woff?i7m7e2') format('woff'),
-    url('fonts/icomoon.svg?i7m7e2#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?s019st');
+  src:  url('fonts/icomoon.eot?s019st#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?s019st') format('truetype'),
+    url('fonts/icomoon.woff?s019st') format('woff'),
+    url('fonts/icomoon.svg?s019st#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -24,42 +24,39 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-paperplane:before {
+.icon-question-mark:before {
   content: "\e900";
 }
-.icon-school:before {
+.icon-home:before {
   content: "\e901";
 }
-.icon-x:before {
-  content: "\e902";
-}
-.icon-help:before {
-  content: "\e903";
-}
-.icon-open-book:before {
-  content: "\e904";
-}
-.icon-home:before {
+.icon-pencil:before {
   content: "\e905";
 }
-.icon-pencil:before {
-  content: "\e906";
+.icon-books:before {
+  content: "\e920";
+}
+.icon-download:before {
+  content: "\e960";
+}
+.icon-bubbles4:before {
+  content: "\e970";
 }
 .icon-pie-chart:before {
   content: "\e99a";
 }
-.icon-download2:before {
-  content: "\e9c5";
+.icon-list-numbered:before {
+  content: "\e9b9";
 }
-.icon-checkmark2:before {
-  content: "\ea11";
+.icon-cross:before {
+  content: "\ea0f";
 }
-.icon-spell-check:before {
-  content: "\ea12";
-}
-.icon-checkbox-checked:before {
-  content: "\ea52";
+.icon-checkmark:before {
+  content: "\ea10";
 }
 .icon-file-pdf:before {
   content: "\eadf";
+}
+.icon-study:before {
+  content: "\e902";
 }
