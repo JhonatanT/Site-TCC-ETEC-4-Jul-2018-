@@ -1,13 +1,11 @@
 *{
-    margin: 0;
     padding: 0;
     font-family: sans-serif;
 }
-.container {
-    display: inline-block;
-    cursor: pointer;
-}
 
+body{
+    overflow: hidden;
+}
 /*tamanho das linhas*/
 .bar1, .bar2, .bar3 {
     position: relative;
@@ -43,8 +41,9 @@ header{
 	width: 100%;/* largura barra */
     height: 60px;/* tamanho barra */
     left: 0;
-    top: 0;
+    top: 0px;
     background: #036; /* cor barra*/
+    z-index: 100;
 }
 
 #check{
@@ -58,14 +57,17 @@ header{
 }
 
 .menu{
-    position: relative fixed;
+    position: fixed;
     width: 53px;
     height: 800px;
     background: #2D3E50; /* cor menu lateral */
     transition: all 500ms cubic-bezier(1,0,0,1);
     transition-timing-function: cubic-bezier(1,0,0,1);
-    overflow-y: auto;
-    overflow-x: hidden;
+    overflow: hidden;
+    top: 50px;
+    z-index: 99;
+    left: 0px;
+    
     
 }
 .menu li{

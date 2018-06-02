@@ -1,0 +1,13 @@
+.video{
+    position: relative;
+    border: 5px solid black;
+    top: 130px;
+    height: 400px;
+    width: 550px;
+    left: 400px;
+}
+h2{
+    position: relative;
+    left: 400px;
+    top: 150px;
+}
