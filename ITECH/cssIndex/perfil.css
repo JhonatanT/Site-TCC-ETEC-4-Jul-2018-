@@ -1,0 +1,8 @@
+
+body{  
+
+background: url(../pictures/fundo.png) relative center; 
+background-image: url(../pictures/fundo.png); 
+background-attachment: relative; 
+background-position: center; 
+}
