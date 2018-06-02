@@ -6,10 +6,15 @@
 body{
     overflow: hidden;
 }
+.container{
+    cursor: pointer;
+    width: 60px;
+    height: 50px;
+}
 /*tamanho das linhas*/
 .bar1, .bar2, .bar3 {
     position: relative;
-    top: 8px;
+    top: 9px;
     width: 35px;
     height: 5px;
     background-color: #fffefe;
