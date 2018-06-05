@@ -36,14 +36,13 @@
 }
 
 /* barra menu */
-header{
+.cabecalho1{
     position: fixed;
 	width: 100%;/* largura barra */
     height: 60px;/* tamanho barra */
     left: 0;
     top: 0px;
     background: #036; /* cor barra*/
-    z-index: 100;
 }
 
 #check{
@@ -64,9 +63,8 @@ header{
     transition: all 500ms cubic-bezier(1,0,0,1);
     transition-timing-function: cubic-bezier(1,0,0,1);
     top: 50px;
-    z-index: 99;
     left: 0px;
-    overflow-x: auto;
+    overflow: hidden;
 }
 .menu li{
     list-style: none;
