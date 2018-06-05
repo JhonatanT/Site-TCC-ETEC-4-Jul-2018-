@@ -10,19 +10,20 @@ background-position: center;
 
 
 .container{
+    margin: auto;
     position: relative;
+    top: 120px;
     width: 30%;
     height: 59%;
     background-color: white;
     border-radius: 10px;
-    top: 24%;
-    left: 37%;
     text-align: center;
+    
     
 }
 
 .container h1{
-    border-top: 10px solid white;
+    padding: 1px 3px;
     position: relative;
     font-family: arial; 
     font-size: 180%;

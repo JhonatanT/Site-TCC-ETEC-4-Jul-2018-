@@ -1,13 +1,24 @@
+body{
+    overflow: hidden;
+}
 .video{
     position: relative;
-    border: 5px solid black;
+    border: 10px solid black;
+    left: 50px;
     top: 130px;
     height: 400px;
     width: 550px;
-    left: 400px;
+    margin: auto;
+    z-index: 1;
+    border-radius: 10px;
 }
 h2{
     position: relative;
-    left: 400px;
+    left: 450px;
     top: 150px;
+}
+embed{
+    
+    width: 550px;
+    height: 400px;
 }

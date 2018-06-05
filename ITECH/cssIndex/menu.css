@@ -43,6 +43,7 @@
     left: 0;
     top: 0px;
     background: #036; /* cor barra*/
+    z-index: 100;
 }
 
 #check{
@@ -65,6 +66,7 @@
     top: 50px;
     left: 0px;
     overflow: hidden;
+    z-index: 7;
 }
 .menu li{
     list-style: none;
