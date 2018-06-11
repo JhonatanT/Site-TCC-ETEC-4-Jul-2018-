@@ -42,8 +42,8 @@
     height: 60px;/* tamanho barra */
     left: 0;
     top: 0px;
-    background: #036; /* cor barra*/
-    z-index: 100;
+    background: #004080; /* cor barra*/
+    z-index: 1000;
 }
 
 #check{
@@ -57,15 +57,17 @@
 }
 
 .menu{
-    position: fixed;
+    position: relative;
     width: 53px;
     height: 800px;
     background: #2D3E50; /* cor menu lateral */
     transition: all 500ms cubic-bezier(1,0,0,1);
     transition-timing-function: cubic-bezier(1,0,0,1);
-    top: 50px;
+    top: 4px;
     left: 0px;
     overflow: hidden;
+    z-index: 500;
+    
 }
 .menu li{
     list-style: none;

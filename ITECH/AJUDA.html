@@ -8,16 +8,25 @@
     <link rel="stylesheet" href="../ITECH/cssIndex/ajuda.css">
     <link rel="stylesheet" href="../ITECH/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Abel|Amatic+SC|Open+Sans+Condensed:300|Raleway" rel="stylesheet">
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Tangerine">
+    <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon" />
     <script>
-$(document).ready(function() {
-  $('.principal > ul').hide();
-  
-  $('.principal h3').click(function() {
-    $(this).next().toggle('slow, 1000');
-  });
- });
-        </script>
-	<link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon" />
+        $(document).ready(function() {
+        $('.principal > ul').hide();
+
+        $('.principal h3').click(function() {
+        $(this).next().toggle('slow, 1000');
+        });
+        });
+    </script>
+    <script>
+        function myFunction(x) {
+        x.classList.toggle("change");
+        }
+    </script>
+    
     
     </head>
     <body>
@@ -35,13 +44,12 @@ $(document).ready(function() {
             <input type="checkbox" id="check">
             <nav class="menu">	
                 <ul>
-                   <li><a href = "index.html" title="Inicio"><span class="icon-home"></span>&nbsp &nbsp Inicio</a></li>
+                   <li><a href = "index.html" title="Inicio"><span class="icon-home"></span>&nbsp &nbsp Matérias</a></li>
 					<li><a href = "DESEMPENHO.html" title="Desempenho"><span class="icon-pie-chart"></span>&nbsp &nbsp Desempenho</a></li>
 					<li><a href = "EXERCICIOS.html" title="Exercicios"><span class="icon-list-numbered"></span>&nbsp &nbsp Exercícios</a></li>
-                    <li><a href = "VESTIBULARES.html" title="Vestibulares"><span class="icon-study"></span>&nbsp &nbsp Vestibulares</a></li>
                     <li><a href = "gabaritos.html" title="Gabaritos"><span class="icon-checkmark"></span>&nbsp &nbsp Gabaritos</a></li>
                     <li><a href = "enem.html" title="Enem"><span class="icon-books"></span>&nbsp &nbsp Enem</a></li>
-                    <li><a href = "redacao.html" title="Redação"><span class="icon-pencil"></span>&nbsp &nbsp Redação</a></li>
+                    <li><a href = "redacao.html" title="Redação"><span class="icon-pencil"></span>&nbsp &nbsp Dicas para o ENEM</a></li>
                     <li><a href = "pdf.html" title="Pdf's para estudo"><span class="icon-file-pdf"></span>&nbsp &nbsp PDF para estudos</a></li>
 					<li><a href = "download.html" title="Downloads"><span class="icon-download"></span>&nbsp &nbsp  Download</a></li>
                     <li><a href = "FaleConosco.html" title="Fale Conosco"><span class="icon-bubbles4"></span>&nbsp &nbsp Fale Conosco</a></li>
@@ -53,23 +61,31 @@ $(document).ready(function() {
         </header>
         </div>
         
+        
         <div class="principal">
-          <h3>Como criar uma conta?</h3>
-          <ul>
-            <li>Conteudo de dentro</li>
-          </ul>
+            <h1>Está precisando de ajuda?</h1>
+            <div class="separador"></div>
+            <h3>Como criar uma conta?</h3>
+            
+            <ul>
+                <li>Conteudo de dentro</li>
+            </ul>
           <h3>Como alterar sua senha?</h3>
-          <ul>
-            <li>Conteudo de dentro</li>
-          </ul>
+            
+            
+            <ul>
+                <li>Conteudo de dentro</li>
+            </ul>
           <h3>Como ver seu desempenho?</h3>
-          <ul>
-            <li>Conteudo de dentro</li>
-          </ul>
+            
+            <ul>
+                <li>Conteudo de dentro</li>
+            </ul>
           <h3>Como baixar o software</h3>
-          <ul>
-            <li>Conteudo de dentro</li>
-          </ul>
+            
+            <ul>
+                <li>Conteudo de dentro</li>
+            </ul>
         </div>
     </body>
 </html>

@@ -1,17 +1,36 @@
+
 body{
     overflow: hidden;
+    background: #202225;
 }
 .principal{
+    font-family: 'Tangerine', serif;
+    padding: 10px 0px;
     position: relative;
-    background-color: ;
-    width: 400px;
+    width: 700px;
     margin: auto;
     height: auto;
-    top: 55px;
+    top: 50px;
+    left: 50px;
+    background: lightgray;
+}
+.principal h3{
     
+    cursor: pointer;
+    padding: 10px 50px;
 }
 .principal li{
     list-style: none;
     color: red;
+    padding: 0px 70px;
+    
+}
+.principal h1{
+    text-align: center;
+}
+.separador{
+    width: 100%;
+    border-top: 4px solid gray;
+    list-style-type: none;
 }
 

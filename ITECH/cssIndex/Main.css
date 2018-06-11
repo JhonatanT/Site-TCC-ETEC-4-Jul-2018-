@@ -4,6 +4,7 @@ body{
     background-color:url(../pictures/fundo.png) fixed center;
     background-image: url(../pictures/fundo.png);
     background-color: #0F2D51;
+    
 }
 #box{
     height: 250px;

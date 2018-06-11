@@ -14,7 +14,7 @@ background-position: center;
     position: relative;
     top: 120px;
     width: 30%;
-    height: 59%;
+    height: auto;
     background-color: white;
     border-radius: 10px;
     text-align: center;
@@ -23,24 +23,23 @@ background-position: center;
 }
 
 .container h1{
-    padding: 1px 3px;
     position: relative;
     font-family: arial; 
     font-size: 180%;
 }
 input[type="text"] {
     position: relative;
-    height: 10%;
+    height: 8%;
     width: 80%;
     border: 0px;
     outline: none;
     border-bottom: 1px solid black;
-    margin-top: 20px;
+    margin-top: 5%;
 }
 
 input[type="password"]{
     position: relative;
-    height: 10%;
+    height: 8%;
     width: 80%;
     border: 0px;
     outline: none;
@@ -52,12 +51,12 @@ input[type="submit"]{
     background-color: #036;
     color: white;
     width: 80%;
-    height: 9%;
+    height: 6%;
     border-radius: 17px;
     border: none;
     font-family: arial;
     font-size: 15px;
-    margin-top: 15%;
+    margin-top: 5%;
     
 }
 input[type="submit"]:hover{
@@ -69,12 +68,13 @@ button[type="button"]{
     background-color: #036;
     color: white;
     width: 80%;
-    height: 9%;
+    height: 6%;
     border-radius: 17px;
     border: none;
     font-family: arial;
     font-size: 15px;
     margin-top: 1%;
+    margin-bottom: 2%;
     
 }
 
