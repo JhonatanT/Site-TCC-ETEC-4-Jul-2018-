@@ -1,26 +1,17 @@
 body{
     overflow: hidden;
 }
-.video{
+.principal{
     position: relative;
-    border: 10px solid black;
-    left: 50px;
-    top: 130px;
-    height: 400px;
-    width: 550px;
+    background-color: ;
+    width: 400px;
     margin: auto;
-    z-index: 1;
-    border-radius: 10px;
-    box-shadow: 5px 5px 5px grey;
+    height: auto;
+    top: 55px;
     
 }
-h2{
-    position: relative;
-    left: 450px;
-    top: 150px;
+.principal li{
+    list-style: none;
+    color: red;
 }
-embed{
-    
-    width: 550px;
-    height: 400px;
-}
+

@@ -7,16 +7,22 @@
     <link rel="stylesheet" href="../ITECH/cssIndex/menu.css">
     <link rel="stylesheet" href="../ITECH/cssIndex/ajuda.css">
     <link rel="stylesheet" href="../ITECH/style.css">
-    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script>
+$(document).ready(function() {
+  $('.principal > ul').hide();
+  
+  $('.principal h3').click(function() {
+    $(this).next().toggle('slow, 1000');
+  });
+ });
+        </script>
 	<link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon" />
-</head>
-<body>
-<script>
-	function myFunction(x) {
-    x.classList.toggle("change");
-}
-</script>
+    
+    </head>
+    <body>
    
+           
         <div class="content-all">
             <header class="cabecalho1">
 				<div class="container" onclick="document.getElementById('check').checked = !document.getElementById('check').checked; myFunction(this)">
@@ -46,9 +52,24 @@
             </nav>
         </header>
         </div>
-    <div class="video">
-        <embed src="https://www.youtube.com/embed/F9Bo89m2f6g" allowfullscreen="true">
-    </div>
-    <h2>Assista o vídeo para saber como o site funciona!</h2>
-</body>
+        
+        <div class="principal">
+          <h3>Como criar uma conta?</h3>
+          <ul>
+            <li>Conteudo de dentro</li>
+          </ul>
+          <h3>Como alterar sua senha?</h3>
+          <ul>
+            <li>Conteudo de dentro</li>
+          </ul>
+          <h3>Como ver seu desempenho?</h3>
+          <ul>
+            <li>Conteudo de dentro</li>
+          </ul>
+          <h3>Como baixar o software</h3>
+          <ul>
+            <li>Conteudo de dentro</li>
+          </ul>
+        </div>
+    </body>
 </html>

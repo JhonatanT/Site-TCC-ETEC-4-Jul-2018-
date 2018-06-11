@@ -129,8 +129,10 @@ input[type="submit"]:hover{
 li.separador {
     margin-top: 10px;
     width: 100%;
-    border-top: 4px solid #e6e6e6;
+    border-top: 4px solid #cccccc;
     list-style-type: none;
     border-radius: 100px;
-    
 }
+
+
+
