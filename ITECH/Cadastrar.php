@@ -1,12 +1,3 @@
-<?PHP
-    $host="localhost";
-    $root="root";
-    $senha="1234";
-    $bd="GenniusDB";
-    $conexao = mysqli_connect($host, $root, $senha, $bd) or die (mysqli_error());
-
-    mysqli_select_db($conexao, $bd) or die(mysqli_error());
-?>
 <!DocType Html!>
     <html>
         <head>
@@ -27,6 +18,7 @@
         </head>
         <body>
             <?PHP
+                include 'banco.php';
                 $Nome=$_POST['txtNome'];
                 $Sobrenome=$_POST['txtSobrenome'];
                 $Email=$_POST['txtEmail'];

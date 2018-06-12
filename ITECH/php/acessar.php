@@ -1,12 +1,3 @@
-<?PHP
-    $host="localhost";
-    $root="root";
-    $senha="1234";
-    $bd="Site_bd";
-    $conexao = mysqli_connect($host, $root, $senha, $bd) or die (mysqli_error());
-
-    mysqli_select_db($conexao, $bd) or die(mysqli_error());
-?>
 <!DocType Html!>
     <html>
         <head>
@@ -26,6 +17,8 @@
         </head>
         <body>
             <?PHP
+                include 'banco.php';
+                
                 $Usuario=$_POST['txtUsuario'];
                 $Senha=$_POST['txtSenha'];
 
