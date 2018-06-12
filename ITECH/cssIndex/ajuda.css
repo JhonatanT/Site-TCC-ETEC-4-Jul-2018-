@@ -1,10 +1,8 @@
 
 body{
-    overflow: hidden;
     background: #202225;
 }
 .principal{
-    font-family: 'Tangerine', serif;
     padding: 10px 0px;
     position: relative;
     width: 700px;
@@ -15,11 +13,10 @@ body{
     background: lightgray;
 }
 .principal h3{
-    
     cursor: pointer;
     padding: 10px 50px;
 }
-.principal li{
+.principal p{
     list-style: none;
     color: red;
     padding: 0px 70px;
@@ -27,10 +24,13 @@ body{
 }
 .principal h1{
     text-align: center;
+    font-family: cursive;
 }
 .separador{
-    width: 100%;
-    border-top: 4px solid gray;
+    margin: auto;
+    width: 90%;
+    border-top: 2px solid #d9d9d9;
     list-style-type: none;
+    border-radius: 5px;
 }
 

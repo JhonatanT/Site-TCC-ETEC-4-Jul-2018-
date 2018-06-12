@@ -8,6 +8,9 @@
     cursor: pointer;
     width: 60px;
     height: 50px;
+    position: absolute;
+    z-index: 501;
+    left: -2px;
 }
 /*tamanho das linhas*/
 .bar1, .bar2, .bar3 {
@@ -37,12 +40,9 @@
 
 /* barra menu */
 .cabecalho1{
-    position: fixed;
-	width: 100%;/* largura barra */
     height: 60px;/* tamanho barra */
     left: 0;
     top: 0px;
-    background: #004080; /* cor barra*/
     z-index: 1000;
 }
 
@@ -60,13 +60,13 @@
     position: relative;
     width: 53px;
     height: 800px;
-    background: #2D3E50; /* cor menu lateral */
+    background: #246fa6; /* cor menu lateral */
     transition: all 500ms cubic-bezier(1,0,0,1);
     transition-timing-function: cubic-bezier(1,0,0,1);
-    top: 4px;
-    left: 0px;
+    left: -8px;
     overflow: hidden;
     z-index: 500;
+    top: -7px;
     
 }
 .menu li{
