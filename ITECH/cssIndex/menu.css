@@ -40,7 +40,7 @@
 
 /* barra menu */
 .cabecalho1{
-    height: 60px;/* tamanho barra */
+    height: 0px;/* tamanho barra */
     left: 0;
     top: 0px;
     z-index: 1000;

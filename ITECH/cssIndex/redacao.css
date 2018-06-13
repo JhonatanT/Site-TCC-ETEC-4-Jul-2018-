@@ -4,6 +4,9 @@ body{
 
 .box {
 	width:20.5em;
+    margin-left: 100px;
+    margin-top: 60px;
+    position: relative;
 }
 
 
@@ -19,7 +22,7 @@ body{
 .cf:after {
     clear: both;
 }
-.cf {
+.cf{
     *zoom: 1;
 }
 .left {
@@ -28,9 +31,7 @@ body{
 .right {
     float:right;
 }		
-.clear {
-    clear:both;
-}		
+		
 .center {
     text-align:center;
 }		
@@ -61,7 +62,7 @@ body{
 .flip-container, .front, .back {
     width: 370px;
     height: 220px;
-		}
+}
 
 .flipper {
     -webkit-transition: 0.6s;
@@ -92,8 +93,6 @@ body{
     transition: 0.6s;
     transform-style: preserve-3d;
     position: absolute;
-    top: 0;
-    left: 0;
 }
 
 .front {
@@ -104,7 +103,7 @@ body{
 }
 
 .back {
-    background: lightblue;
+    background-color: rgba(61,61,61,0.5);;
     -webkit-transform: rotateY(-180deg);
     -moz-transform: rotateY(-180deg);
     -o-transform: rotateY(-180deg);
@@ -132,9 +131,6 @@ body{
     transform: rotate(-20deg);
 }
 
-.back {
-    background: #eee;
-}
 		
 .back-logo {
 	position: absolute;
@@ -148,11 +144,13 @@ body{
 
 
 .back p {
+    color: white;
     position: absolute;
-    bottom: 40px;
-    left: 0;
-    right: 0;
-    text-align: center;
-    padding: 0 20px;
-    font-size: 18px;
+    text-align: left;
+    padding: 10px 40px;
+    font-size: 20px;
+}
+.back p a{
+    text-decoration: none;
+    color: aquamarine;
 }
