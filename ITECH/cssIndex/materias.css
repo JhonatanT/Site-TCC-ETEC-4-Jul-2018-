@@ -1,0 +1,45 @@
+body{
+    background-color: #202225;
+}
+
+.main{
+    height: auto;
+    width: 1000px;
+    border: 2px solid transparent;
+    margin: auto;
+}
+.main h1{
+    color: white;
+    font-family: 'Quicksand', sans-serif;
+}
+.main hr{
+    color: white;
+}
+.materias a{
+    text-decoration: none;
+    
+}
+dl.materias {
+    margin: 2em 0;
+    padding: 0 20px;
+    font-family: 'Quicksand', sans-serif;
+    color: white;
+}
+.materias dt {
+    position: relative;
+    left: 0;
+    top: 1.5em;
+    width: 8em;
+    font-weight: bold;
+	}
+.materias dd{
+    border-left: 1px solid #EEE;
+    margin: 0 0 0 10em;
+	padding: 0 0 .7em .5em;
+    color: white;
+}
+.divisao{
+    width: 300px;
+    border: 0px;
+}
+	
