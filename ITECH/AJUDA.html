@@ -1,33 +1,29 @@
 <!DOCTYPE HTML>
 <html lang="PT-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="descriprion" content="">
-    <title>Ajuda</title>
-    <link rel="stylesheet" href="../ITECH/cssIndex/menu.css">
-    <link rel="stylesheet" href="../ITECH/cssIndex/ajuda.css">
-    <link rel="stylesheet" href="../ITECH/style.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <link href="https://fonts.googleapis.com/css?family=Abel|Amatic+SC|Open+Sans+Condensed:300|Raleway" rel="stylesheet">
-    <link rel="stylesheet"
-          href="https://fonts.googleapis.com/css?family=Tangerine">
-    <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon" />
-    <script>
-        $(document).ready(function() {
-        $('.principal > p').hide();
+    <head>
+        <meta charset="UTF-8">
+        <meta name="descriprion" content="">
+        <title>Ajuda</title>
+        <link rel="stylesheet" href="../ITECH/cssIndex/menu.css">
+        <link rel="stylesheet" href="../ITECH/cssIndex/ajuda.css">
+        <link rel="stylesheet" href="../ITECH/style.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon" />
+        <script>
+            $(document).ready(function() {
+            $('.principal > article').hide();
 
-        $('.principal h3').click(function() {
-        $(this).next().toggle('slow, 1000');
-        });
-        });
-    </script>
-    <script>
-        function myFunction(x) {
-        x.classList.toggle("change");
-        }
-    </script>
-    
-    
+            $('.principal h3').click(function() {
+            $(this).next().toggle('slow, 1000');
+            });
+            });
+        </script>
+        <script>
+            function myFunction(x) {
+            x.classList.toggle("change");
+            }
+        </script>
     </head>
     <body>
    
@@ -39,7 +35,6 @@
 					<div class="bar2 icon-content"></div>
 					<div class="bar3 icon-content"></div>
 				</div>
-                <div class="foto"></div>
 			
             <input type="checkbox" id="check">
             <nav class="menu">	
@@ -70,17 +65,23 @@
             <h1>Está precisando de ajuda?</h1>
             <div class="separador"></div>
             <h3>Como criar uma conta?</h3>
+            <article>
                 <p>conteudo de dentro</p>
+            </article>
+
           <h3>Como alterar sua senha?</h3>
-            
-            
+            <article>
             <p>Conteudo de dentro</p>
+            <img src="imagens/01.png"/>
+            </article>
           <h3>Como ver seu desempenho?</h3>
-            
+            <article>
             <p>Conteudo de dentro</p>
+            </article>
           <h3>Como baixar o software</h3>
-            
+            <article>
             <p>Conteudo de dentro</p>
+            </article>
         </div>
     </body>
 </html>

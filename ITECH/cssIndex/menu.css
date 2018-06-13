@@ -8,7 +8,7 @@
     cursor: pointer;
     width: 60px;
     height: 50px;
-    position: absolute;
+    position: fixed;
     z-index: 501;
     left: -2px;
 }
@@ -57,19 +57,20 @@
 }
 
 .menu{
-    position: relative;
-    width: 53px;
+    position: fixed;
+    width: 54px;
     height: 800px;
-    background: #246fa6; /* cor menu lateral */
+    background: #336699; /* cor menu lateral */
     transition: all 500ms cubic-bezier(1,0,0,1);
     transition-timing-function: cubic-bezier(1,0,0,1);
-    left: -8px;
+    left: -2px;
     overflow: hidden;
     z-index: 500;
     top: -7px;
     
 }
 .menu li{
+    font-family:'Open Sans Condensed' sans-serif;
     list-style: none;
     padding: 20px;
     color: white;
@@ -77,6 +78,7 @@
     transition: all 300ms;
     display: block;
     width: 400px;
+    overflow: auto;
 }
 
 .menu li:hover{
