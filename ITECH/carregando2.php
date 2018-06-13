@@ -8,7 +8,7 @@
 				//se ele digitou o email certo vá para o painel
                 function loginsuccessfully()
                 {
-                    setTimeout("window.location='enem.html'", 2000);  
+                    setTimeout("window.location='login.html'", 2000);  
                 }
 				//se não vá para o login
                 function loginfailed()
