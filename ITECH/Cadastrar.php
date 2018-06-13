@@ -1,3 +1,12 @@
+<?PHP
+    $host="localhost";
+    $root="root";
+    $senha="";
+    $bd="GenniusDB";
+    $conexao = mysqli_connect($host, $root, $senha, $bd) or die (mysqli_error());
+
+    mysqli_select_db($conexao, $bd) or die(mysqli_error());
+?>
 <!DocType Html!>
     <html>
         <head>
@@ -6,7 +15,7 @@
 				//se ele digitou o email certo vá para o painel
                 function Cadastrosuccessfully()
                 {
-                    setTimeout("window.location='login.html'", 2000);  
+                    setTimeout("window.location='carregando2.php'", 0);  
                 }
 				//se não vá para o login
                 function Cadastrofailed()
@@ -18,17 +27,14 @@
         </head>
         <body>
             <?PHP
-                include 'banco.php';
                 $Nome=$_POST['txtNome'];
-                $Sobrenome=$_POST['txtSobrenome'];
                 $Email=$_POST['txtEmail'];
-                $Senha=$_POST['txtSenhas'];
-                $ConSenha=$_POST['txtConSenha'];
+                $Senha=$_POST['txtSenhas'];          
             
-            
-                $sql = "INSERT INTO tbUsuario(nome_completo, sobre_nome, email, senha) values('$Nome','$Sobrenome', '$Email','$Senha')";
+                $sql = "INSERT INTO tbUsuario(nome_completo, email, senha) values('$Nome', '$Email','$Senha')";
                 mysqli_query($conexao,$sql); 
                 mysqli_close($conexao);
+                echo "<script>Cadastrosuccessfully()</script>";
             ?>
         </body>
     </html>

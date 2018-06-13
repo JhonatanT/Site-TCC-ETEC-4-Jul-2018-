@@ -1,7 +1,7 @@
 <?PHP
     $host="localhost";
     $root="root";
-    $senha="1234";
+    $senha="";
     $bd="GenniusDB";
     $conexao = mysqli_connect($host, $root, $senha, $bd) or die (mysqli_error());
 
@@ -15,14 +15,15 @@
 				//se ele digitou o email certo vá para o painel
                 function loginsuccessfully()
                 {
-                    setTimeout("window.location='enem.html'", 2000);  
+                    setTimeout("window.location='carregando.php'", 0);  
                 }
 				//se não vá para o login
                 function loginfailed()
                 {
-                    setTimeout("window.location='login.html'", 2000);
+                    setTimeout("window.location='login.html'", 5000);
                 }
             </script>
+            <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
         </head>
         <body>
             <?PHP
@@ -37,7 +38,6 @@
                     session_start();
                     $_SESSION['email'] = $_POST['txtUsuario'];
                     $_SESSION['senha'] = $_POST['txtSenha'];
-                    echo "<center>Você foi logado com sucesso! Aguarde um instante...</center>";
                     echo "<script>loginsuccessfully()</script>";
                 } else 
                 {
@@ -46,8 +46,15 @@
                 }
                 
                 echo "<style>
+                        body{
+                            background-color: #036;
+                        }
                         center{
+                            text-align:center;
+                            position: center;
                             font-size: 30px;
+                            font-family: 'Quicksand', sans-serif;
+                            color: white;
                         }
                     </style>";
                         

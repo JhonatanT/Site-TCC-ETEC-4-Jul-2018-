@@ -5,12 +5,11 @@ create table tbUsuario(
 id_usuario int primary key not null auto_increment,
 nome_completo varchar(50) not null,
 email varchar(50)not null,
-senha varchar(8) not null,
-data_cadastro date not null
+senha varchar(8) not null
 );
 
-insert into tbUsuario(id_usuario,nome_completo,email,senha,data_cadastro)
-values(default,'Gustavo Mendes Ribeiro','Gustavo.mendesribeiro@Yahoo.com.br','123123',"2018/05/09");
+insert into tbUsuario(id_usuario,nome_completo,email,senha)
+values(default,'Gustavo Mendes Ribeiro','Gustavo.mendesribeiro@Yahoo.com.br','123123');
 
 
 create table tbDisciplina(
