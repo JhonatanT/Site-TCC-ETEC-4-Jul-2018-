@@ -17,6 +17,7 @@ body{
 }
 .materias a{
     text-decoration: none;
+    color: white;
     
 }
 dl.materias {
@@ -31,15 +32,14 @@ dl.materias {
     top: 1.5em;
     width: 8em;
     font-weight: bold;
+    font-size: 20px;
 	}
 .materias dd{
     border-left: 1px solid #EEE;
     margin: 0 0 0 10em;
 	padding: 0 0 .7em .5em;
     color: white;
+    font-size: 20px;
 }
-.divisao{
-    width: 300px;
-    border: 0px;
-}
+
 	
