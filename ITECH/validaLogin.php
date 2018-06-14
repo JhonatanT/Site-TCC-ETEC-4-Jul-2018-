@@ -20,7 +20,7 @@
 				//se não vá para o login
                 function loginfailed()
                 {
-                    setTimeout("window.location='login.php'", 5000);
+                    setTimeout("window.location='Login.php'", 5000);
                 }
             </script>
             <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
@@ -56,6 +56,7 @@
                     echo "<center>Pagina não encontrada</center>";
                     //header("Location: login.php");
                 }
+                mysqli_close($conexao);
             echo    "<style>
                     body
                     {

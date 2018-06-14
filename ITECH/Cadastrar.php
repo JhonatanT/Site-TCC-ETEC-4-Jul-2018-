@@ -20,7 +20,7 @@
 				//se não vá para o login
                 function Cadastrofailed()
                 {
-                    setTimeout("window.location='login.php'", 2000);
+                    setTimeout("window.location='Login.php'", 2000);
                 }
             </script>
             

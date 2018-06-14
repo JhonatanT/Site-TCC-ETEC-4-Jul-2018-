@@ -43,12 +43,6 @@
                     <input name="txtSenhas" type="password" placeholder="Senha"/><br>
                     <button>CADASTRAR</button>
                 </form>
-                <p class="php">
-                    <?php if (isset($_SESSION['loginError'])){
-                        echo"Usuario ou senha inválidos!";   
-                    }
-                    ?>
-                </p>
             </div>
             <div id="login_msg">Já tem uma conta?</div>
             <div id="signup_msg">Não tem uma conta?</div>
