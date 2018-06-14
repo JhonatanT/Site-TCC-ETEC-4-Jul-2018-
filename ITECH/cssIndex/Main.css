@@ -140,4 +140,8 @@ a:hover{
     background-image: url('../imagens/voltar.png');
     
 }
+.php{
+    text-align: center;
+    color: firebrick;
+}
 

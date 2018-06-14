@@ -8,12 +8,12 @@
 				//se ele digitou o email certo vá para o painel
                 function loginsuccessfully()
                 {
-                    setTimeout("window.location='enem.html'", 2000);  
+                    setTimeout("window.location='enem.php'", 2000);  
                 }
 				//se não vá para o login
                 function loginfailed()
                 {
-                    setTimeout("window.location='login.html'", 2000);
+                    setTimeout("window.location='login.php'", 2000);
                 }
             </script>
     <meta charset="utf-8">

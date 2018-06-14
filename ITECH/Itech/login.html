@@ -12,15 +12,6 @@
 	    <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon"/>
     </head>
     <body>
-        <?php
-            //se existir a variavel global msg
-            if(isset($_SESSION['msg'])){
-                //mostre a mensagem
-                echo $_SESSION['msg'];
-                //depois a destrua
-                unset($_SESSION['msg']);
-            }
-        ?>
         <a href="index.html"><input type="button" id="voltar" value="" data-toggle="tooltip" title="Voltar"></a>
         <div id="box">
             <div id="main"></div>
@@ -43,12 +34,6 @@
                     <input name="txtSenhas" type="password" placeholder="Senha"/><br>
                     <button>CADASTRAR</button>
                 </form>
-                <p class="php">
-                    <?php if (isset($_SESSION['loginError'])){
-                        echo"Usuario ou senha inválidos!";   
-                    }
-                    ?>
-                </p>
             </div>
             <div id="login_msg">Já tem uma conta?</div>
             <div id="signup_msg">Não tem uma conta?</div>
