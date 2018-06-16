@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html>
   <head>
     <title>Aguarde...</title>
       <link rel="stylesheet" href="../ITECH/cssIndex/carregando.css">
