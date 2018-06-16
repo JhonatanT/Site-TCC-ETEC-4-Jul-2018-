@@ -1,3 +1,47 @@
 body{
     background: #202225;
+    overflow-x: hidden;
+}
+
+.download{
+    top: -10px;
+    position: relative;
+    width: 110%;
+    height: auto;
+    background-color: #2d2f33;
+    padding: 20px 0px;
+    margin: auto;
+}
+
+.download .logo{
+    top: 15px;
+    display: block;
+    position: relative;
+    width:300px;
+    height:100px;
+    left:40%;
+}
+.download label{
+    
+    color: white;
+    position: relative;
+    left: 33%;
+    font-size: 35px;
+    font-family: 'Quicksand', sans-serif;
+}
+.baixar{
+    position: relative;
+    width: 110%;
+    top: -10px;
+    height: auto;
+    border: 5px solid red;
+}
+footer {
+    position:absolute;
+    bottom:0;
+    width:100%;
+}
+footer p{
+    color: white;
+    text-align: center;
 }
