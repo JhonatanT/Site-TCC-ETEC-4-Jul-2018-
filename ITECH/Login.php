@@ -31,6 +31,8 @@
 				<form name="login" method="post" action="validaLogin.php">
                     <input name="txtUsuario" type="email" placeholder="E-mail"/><br>
                     <input name="txtSenha" type="password" placeholder="Senha"/><br>
+                    
+                    
                     <button type="submit" value="Login" name="botaoAcessar">ENTRAR</button>
                 </form>
                 <h5><a href="lembrarSenha.html">Esqueceu a senha?</a></h5>
@@ -41,6 +43,8 @@
                     <input name="txtNome" type="text" placeholder="Nome Completo".focus()/><br>
                     <input name="txtEmail" type="email" placeholder="E-mail"/><br>
                     <input name="txtSenhas" type="password" placeholder="Senha"/><br>
+                    <input name="txtPergunta" type="pergunts" placeholder="Pergunta de Segurança"/><br>
+                    <input name="txtResposta" type="resposta" placeholder="Resposta de Segurança"/><br>
                     <button>CADASTRAR</button>
                 </form>
             </div>
