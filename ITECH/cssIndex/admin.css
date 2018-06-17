@@ -88,6 +88,7 @@ button[type="button"]:hover{
 .botao a{
     text-decoration: none;
     color: white;
+    
 }
 input[type="password"]:focus{
     border-bottom: 2px solid #436f99;
@@ -103,8 +104,10 @@ footer {
     bottom:0;
     width:100%;
 }
+
 footer p{
     color: white;
     text-align: center;
+    font-family: 'Quicksand', sans-serif;
 }
 
