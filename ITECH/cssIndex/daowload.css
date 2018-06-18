@@ -1,6 +1,6 @@
 body{
     background: #202225;
-    overflow-x: hidden;
+    overflow: hidden;
 }
 
 .download{
@@ -8,7 +8,6 @@ body{
     position: relative;
     width: 110%;
     height: auto;
-    background-color: #2d2f33;
     padding: 20px 0px;
     margin: auto;
 }
@@ -22,20 +21,23 @@ body{
     left:40%;
 }
 .download label{
-    
-    color: white;
     position: relative;
-    left: 33%;
+    top: 100px;
+    padding: 0 450px;
+    font-family: 'Quicksand', sans-serif;
     font-size: 35px;
+    text-align: center;
+    color: white;
+}
+.download .descricao{
+    padding: 100px 350px;
+    text-align: center;
+    font-size: 20px;
+    color: white;
     font-family: 'Quicksand', sans-serif;
 }
-.baixar{
-    position: relative;
-    width: 110%;
-    top: -10px;
-    height: auto;
-    border: 5px solid red;
-}
+
+
 footer {
     position:absolute;
     bottom:0;
@@ -44,4 +46,51 @@ footer {
 footer p{
     color: white;
     text-align: center;
+    
+}
+
+.botao{
+    position: relative;
+    width: 300px;
+    height: 60px;
+    left: 40%;
+    font-size: 20px;
+    font-family: 'Quicksand', sans-serif;
+    border-radius: 10px;
+    border: 2px solid #436f99;
+    background-color: #202225;
+    color: #436f99;
+    top: -50px;
+}
+.botao:hover{
+    background-color: #436f99;
+    color: white;
+}
+.download .windows{
+    position: relative;
+    text-align: center;
+    color: white;
+    top: -50px;
+    font-family: 'Quicksand', sans-serif;
+}
+.download .windows a{
+    text-decoration: none;
+    color: #436f99;
+}
+.download .windows a:hover{
+    text-decoration: underline;
+}
+.download .termos{
+    position: relative;
+    text-align: center;
+    color: white;
+    top: -50px;
+    font-family: 'Quicksand', sans-serif;
+}
+.download .termos a{
+    text-decoration: none;
+    color: #436f99;
+}
+.download .termos a:hover{
+    text-decoration: underline;
 }
