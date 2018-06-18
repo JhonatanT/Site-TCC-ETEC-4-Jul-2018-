@@ -1,5 +1,5 @@
 <?Php
-    session_start();
+    session_start();//iniciando as variaveis globais
 ?>
 <!DOCTYPE HTML>
 <html lang="PT-BR">
@@ -35,7 +35,7 @@
                         <br>
                         <center>
                             <?php
-                                echo $_SESSION['usuarioNome'];
+                                echo $_SESSION['usuarioNome'];//pegando o nome do usuario
                                 echo"<style>
                                     body
                                     {

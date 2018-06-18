@@ -27,7 +27,7 @@
         </head>
         <body>
             <?PHP
-                session_start();
+                session_start();//iniciando as variveis globais
                 if((isset($_POST['txtUsuario'])) && (isset($_POST['txtSenha'])))
                 {
                     $usuario = mysqli_real_escape_string($conexao, $_POST['txtUsuario']); //escapar de caracteres especiais como aspas, prevenindo sql injection
@@ -41,10 +41,10 @@
                         echo"<script>loginfailed()</script>";
                     }elseif(isset($resultado))
                     {
-                        $_SESSION['usuarioId'] = $resultado['id_usuario'];
-                        $_SESSION['usuarioNome'] = $resultado['nome_completo'];
-                        $_SESSION['usuarioEmail'] = $resultado['email'];
-                        $_SESSION['usuarioSenha'] = $resultado['senha'];
+                        $_SESSION['usuarioId'] = $resultado['id_usuario'];//dando nome para elas e sua respectivas funcoes
+                        $_SESSION['usuarioNome'] = $resultado['nome_completo'];//se quiser utiliza-las precisa colocar o nome delas
+                        $_SESSION['usuarioEmail'] = $resultado['email'];//porem antes disso vc precisa de novo inciar as variaveis globais
+                        $_SESSION['usuarioSenha'] = $resultado['senha'];//com session_star();
                         echo "<script>loginsuccessfully()</script>";
                     }else
                     {
