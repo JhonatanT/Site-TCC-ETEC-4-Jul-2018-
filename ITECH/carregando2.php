@@ -6,14 +6,9 @@
        <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon"/>
       <script type="text/javascript">
 				//se ele digitou o email certo vá para o painel
-                function loginsuccessfully()
+                function carregando()
                 {
                     setTimeout("window.location='Login.php'", 2000);  
-                }
-				//se não vá para o login
-                function loginfailed()
-                {
-                    setTimeout("window.location='Login.php'", 2000);
                 }
             </script>
     <meta charset="utf-8">
@@ -34,6 +29,6 @@
 </div>
   </body>
     <?PHP
-        echo "<script>loginsuccessfully()</script>";
+        echo "<script>carregando()</script>";
     ?>
 </html>
