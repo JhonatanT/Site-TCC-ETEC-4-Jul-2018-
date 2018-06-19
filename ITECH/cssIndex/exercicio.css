@@ -1,5 +1,6 @@
 body{
     background-color: #202225;
+    overflow-x: hidden;
 }
 .perguntas{
     position: relative;
@@ -143,6 +144,22 @@ li.separador {
     list-style-type: none;
     border-radius: 100px;
     opacity: 0.5;
+}
+.tudo{
+    width: 800px;
+    height: auto;
+}
+
+footer{
+    position:absolute;
+    width:100%;
+    left: 50px;
+}
+
+footer p{
+    color: white;
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
 }
 
 

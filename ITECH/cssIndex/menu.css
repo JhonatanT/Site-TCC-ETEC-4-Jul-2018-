@@ -70,7 +70,6 @@
     
 }
 .menu li{
-    font-family:'Open Sans Condensed' sans-serif;
     list-style: none;
     padding: 20px;
     color: white;
@@ -87,11 +86,9 @@
 .menu a{
 	color: white;
 	text-decoration: none;
+    font-family: 'Quicksand', sans-serif;
 }
 
-article{
-    padding: 40px;
-}
 .menu::-webkit-scrollbar {
 	width: 8px;
 }
@@ -99,4 +96,11 @@ article{
 .menu::-webkit-scrollbar-thumb {
 	background: rgba(255,255,255, .2);
 	border-radius: 5px;
+}
+.menu li a{
+    padding: 0 22px;
+    font-family: 'Quicksand', sans-serif;
+}
+.menu li span{
+    float: left;
 }

@@ -2,66 +2,40 @@
 body{
     background: #202225;
     overflow-x: hidden;
+}
+
+.tudo{
+    margin: auto;
+    width: 700px;
     height: auto;
 }
-.barra{
-    top: -10px;
-    position: relative;
-    width: 110%;
-    height: 25%;
-    background-color: #2d2f33;
-    padding: 20px 0px;
-    margin: auto;
-}
-
-.dvPrincipal{
-    position: relative;
-    top: 15%;
-    width:100%;
-    max-width: 600px;
-    margin: auto;
-}
-             
-.dvBarra{
-background-color: #fff; /*mudar essa cor*/
-    padding: 7px;
-}
-.dvBarra span{
+.tudo h2{
     font-family: 'Quicksand', sans-serif;
-    font-size: 20px;
-
+    color: #436f99;
+    padding: 15px 0 0 0;
 }
-             
-.btnClick{
-    cursor: pointer;
-    font-size: 22px;
-    margin-top: -3px;
-    float: right;
-}                              
-.dvConteudo{
-    display: none;
-
-}
-.dvConteudo p{
+.tudo p{
     font-family: 'Quicksand', sans-serif;
-    padding: 0px 20px;
+    padding: 0 20px;
     color: white;
-
 }
-footer p{
-    color: white;
-    text-align: center;
-    font-family: 'Quicksand', sans-serif;
+.tudo hr{
+    width: 400px;
+    height: 1px;
+    background-color: #436f99;
+    border-radius: 10px;
+    border-color: #436f99;
+    border-top-width: 0px;
 }
 footer{
-    left: 5%;
-    width: 100%;
-    margin: auto;
-	position: absolute;
-	bottom: 0;
-}
-.barra h1{
-    font-family: 'Quicksand', sans-serif;
-    
+    position:absolute;
+    bottom:0;
+    width:100%;
 }
 
+footer p{
+    position: relative;
+    color: white;
+    left: 200px;
+    font-family: 'Quicksand', sans-serif;
+}

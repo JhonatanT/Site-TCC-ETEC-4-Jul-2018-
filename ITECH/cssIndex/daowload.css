@@ -6,7 +6,7 @@ body{
 .download{
     top: -10px;
     position: relative;
-    width: 110%;
+    
     height: auto;
     padding: 20px 0px;
     margin: auto;
@@ -93,4 +93,21 @@ footer p{
 }
 .download .termos a:hover{
     text-decoration: underline;
+}
+.tudo{
+    width: 110%;
+    margin: auto;
+}
+footer{
+    position:absolute;
+    bottom:0;
+    width:100%;
+}
+
+footer p{
+    position: relative;
+    color: white;
+    left: 50px;
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
 }

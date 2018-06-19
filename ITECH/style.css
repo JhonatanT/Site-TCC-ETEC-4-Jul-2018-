@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?s019st');
-  src:  url('fonts/icomoon.eot?s019st#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?s019st') format('truetype'),
-    url('fonts/icomoon.woff?s019st') format('woff'),
-    url('fonts/icomoon.svg?s019st#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?5iqreh');
+  src:  url('fonts/icomoon.eot?5iqreh#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?5iqreh') format('truetype'),
+    url('fonts/icomoon.woff?5iqreh') format('woff'),
+    url('fonts/icomoon.svg?5iqreh#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -24,17 +24,20 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-question-mark:before {
+.icon-x:before {
   content: "\e900";
 }
-.icon-home:before {
+.icon-chart:before {
   content: "\e901";
 }
-.icon-pencil:before {
-  content: "\e905";
+.icon-pie:before {
+  content: "\e901";
 }
-.icon-books:before {
-  content: "\e920";
+.icon-stats:before {
+  content: "\e901";
+}
+.icon-book2:before {
+  content: "\e91f";
 }
 .icon-download:before {
   content: "\e960";
@@ -42,21 +45,27 @@
 .icon-bubbles4:before {
   content: "\e970";
 }
-.icon-pie-chart:before {
-  content: "\e99a";
+.icon-lab:before {
+  content: "\e9aa";
 }
-.icon-list-numbered:before {
-  content: "\e9b9";
+.icon-lightbulb_outline:before {
+  content: "\e902";
 }
-.icon-cross:before {
-  content: "\ea0f";
+.icon-file-pdf-o:before {
+  content: "\e903";
+}
+.icon-user:before {
+  content: "\e904";
+}
+.icon-open-book:before {
+  content: "\e908";
+}
+.icon-help:before {
+  content: "\e905";
+}
+.icon-book:before {
+  content: "\e906";
 }
 .icon-checkmark:before {
-  content: "\ea10";
-}
-.icon-file-pdf:before {
-  content: "\eadf";
-}
-.icon-study:before {
-  content: "\e902";
+  content: "\e907";
 }

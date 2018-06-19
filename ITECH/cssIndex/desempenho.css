@@ -1,0 +1,14 @@
+body{
+    background-color: #202225;
+}
+footer p{
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+}
+footer{
+    left: 5%;
+    width: 100%;
+    margin: auto;
+	position: absolute;
+	bottom: 0;
+}
