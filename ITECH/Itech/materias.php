@@ -1,4 +1,4 @@
-php?id=CTYPE HTML>
+<!DOCTYPE HTML>
 <html>
     <head>
         <meta charset="UTF-8">
@@ -46,71 +46,70 @@ php?id=CTYPE HTML>
         <div class="main">
             <h1>Matérias e Temas</h1>
             <hr/>
-            <dl class="materias">
+            <dl class="materias" action="exercicios.php" method="post">
                 <dt>ARTES</dt>
-                <dd><a href="exercicios.php?id=">Arte Moderna</a></dd>
-                <dd><a href="exercicios.php?id=">Expressionismo</a></dd>
-                <dd><a href="exercicios.php?id=">Renascimento</a></dd>
+                <dd><a href="exercicios.html">Arte Moderna</a></dd>
+                <dd><a href="exercicios.html">Expressionismo</a></dd>
+                <dd><a href="exercicios.html">Renascimento</a></dd>
                 <dt>BIOLOGIA</dt>
-                <dd><a href="exercicios.php?id=">Bioquímica Celular</a></dd>
-                <dd><a href="exercicios.php?id=">Ecologia</a></dd>
-                <dd><a href="exercicios.php?id=">Genética</a></dd>
+                <dd><a href="exercicios.html">Bioquímica Celular</a></dd>
+                <dd><a href="exercicios.html">Ecologia</a></dd>
+                <dd><a href="exercicios.html">Genética</a></dd>
                 <br>
                 
                 <dt>FILOSOFIA</dt>
-                <dd><a href="exercicios.php?id=">Existencialismo</a></dd>
-                <dd><a href="exercicios.php?id=">Iluminismo</a></dd>
-                <dd><a href="exercicios.php?id=">Política, Corrupção e Ética</a></dd>
+                <dd><a href="exercicios.html">Existencialismo</a></dd>
+                <dd><a href="exercicios.html">Iluminismo</a></dd>
+                <dd><a href="exercicios.html">Política, Corrupção e Ética</a></dd>
                 <br>
                 
                 <dt>FÍSICA</dt>
-                <dd><a href="exercicios.php?id=">Calorimetria</a></dd>
-                <dd><a href="exercicios.php?id=">Hidroestática</a></dd>
-                <dd><a href="exercicios.php?id=">Ondas Eletromâgneticas</a></dd>
+                <dd><a href="exercicios.html">Calorimetria</a></dd>
+                <dd><a href="exercicios.html">Hidroestática</a></dd>
+                <dd><a href="exercicios.html">Ondas Eletromâgneticas</a></dd>
                 <br>
                 
                 <dt>GEOGRAFIA</dt>
-                <dd><a href="exercicios.php?id=">Agropecuária Brasileira</a></dd>
-                <dd><a href="exercicios.php?id=">Geopolítica Mundial</a></dd>
-                <dd><a href="exercicios.php?id=">Oriente Médio - Estado Islâmico</a></dd>
+                <dd><a href="exercicios.html">Agropecuária Brasileira</a></dd>
+                <dd><a href="exercicios.html">Geopolítica Mundial</a></dd>
+                <dd><a href="exercicios.html">Oriente Médio - Estado Islâmico</a></dd>
                 <br>
                 
-                <dt>HISTÓRIA</dt>
-                <dd><a href="exercicios.php?id=">Independência do Brasil</a></dd>
-                <dd><a href="exercicios.php?id=">Revolução Francesa</a></dd>
-                <dd><a href="exercicios.php?id=">Segunda Guerra Mundial</a></dd>
+                <dt name="Disciplina" value="HISTÓRIA">HISTÓRIA</dt>
+                <dd><a href="exercicios.php?exercicios.php" name="Temas" value="3">Independência do Brasil</a></dd>
+                <dd><a href="exercicios.php?exercicios.php" name="Temas" value="2">Revolução Francesa</a></dd>
+                <dd><a href="exercicios.php?exercicios.php" name="Temas" value="1">Segunda Guerra Mundial</a></dd>
                 <br>
                 
                 <dt>INGLÊS</dt>
-                <dd><a href="exercicios.php?id=">Artigos</a></dd>
-                <dd><a href="exercicios.php?id=">Compreensão de texto</a></dd>
-                <dd><a href="exercicios.php?id=">Verbos</a></dd>
+                <dd><a href="exercicios.html">Artigos</a></dd>
+                <dd><a href="exercicios.html">Compreensão de texto</a></dd>
+                <dd><a href="exercicios.html">Verbos</a></dd>
                 <br>
                 
                 <dt>MATEMÁTICA</dt>
-                <dd><a href="exercicios.php?id=">Análise Combinatória</a></dd>
-                <dd><a href="exercicios.php?id=">Progressão Aritmética</a></dd>
-                <dd><a href="exercicios.php?id=">Progressão Geométrica</a></dd>
+                <dd><a href="exercicios.html">Análise Combinatória</a></dd>
+                <dd><a href="exercicios.html">Progressão Aritmética</a></dd>
+                <dd><a href="exercicios.html">Progressão Geométrica</a></dd>
                 <br>
                 
                 <dt>PORTUGUÊS</dt>
-                <dd><a href="exercicios.php?id=">Figuras de Linguagem</a></dd>
-                <dd><a href="exercicios.php?id=">Interpretação de Texto</a></dd>
-                <dd><a href="exercicios.php?id=">Orações Subordinadas</a></dd>
+                <dd><a href="exercicios.html">Figuras de Linguagem</a></dd>
+                <dd><a href="exercicios.html">Interpretação de Texto</a></dd>
+                <dd><a href="exercicios.html">Orações Subordinadas</a></dd>
                 <br>
                 
                 <dt>QUIMÍCA</dt>
-                <dd><a href="exercicios.php?id=">Cadeias Carbônicas</a></dd>
-                <dd><a href="exercicios.php?id=">Compostos iônicos</a></dd>
-                <dd><a href="exercicios.php?id=">Compostos Moleculares</a></dd>
+                <dd><a href="exercicios.html">Cadeias Carbônicas</a></dd>
+                <dd><a href="exercicios.html">Compostos iônicos</a></dd>
+                <dd><a href="exercicios.html">Compostos Moleculares</a></dd>
                 <br>
                 
                 <dt>SOCIOLOGIA</dt>
-                <dd><a href="exercicios.php?id=">Cidadania</a></dd>
-                <dd><a href="exercicios.php?id=">Movimentos Sociais</a></dd>
-                <dd><a href="exercicios.php?id=">Sociologia Comtemporânea</a></dd>
+                <dd><a href="exercicios.html">Cidadania</a></dd>
+                <dd><a href="exercicios.html">Movimentos Sociais</a></dd>
+                <dd><a href="exercicios.html">Sociologia Comtemporânea</a></dd>
                 <br>
-                        
 	           </dl>
         </div>
     </body>
