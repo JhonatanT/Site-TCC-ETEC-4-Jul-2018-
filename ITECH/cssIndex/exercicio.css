@@ -128,7 +128,7 @@ input[type="submit"]:hover{
 footer{
     position:absolute;
     width:100%;
-    left: 50px;
+    bottom: 0;
 }
 
 footer p{
