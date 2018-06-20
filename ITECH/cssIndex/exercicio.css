@@ -3,32 +3,22 @@ body{
     overflow-x: hidden;
 }
 .perguntas{
+    top: 80px;
+    margin: auto;
     position: relative;
     width: 700px;
-    margin: auto;
     height: auto;
-    top: 5px;
-    border: 3px solid #404347;
+    border: 2px solid #436f99;
     left: 50px;
+    border-radius: 10px;
     
 }
-#p1, #p2, #p3, #p4, #p5{
-    font-size: 25px;
-    font-family: arial;
+#p1{
+    font-size: 27px;
+    font-family: 'Quicksand', sans-serif;
     padding: 0px 10px;
     color: white;
-    
-}
-
-.perguntas h1{
-    position: relative;
-    top: -30px;
-    text-align: center;
-    font-size: 27px;
-    color: white;
-    font-family: 'Quicksand', sans-serif;
-    
-    
+    line-height: 40px;   
 }
 
 
@@ -107,48 +97,33 @@ body{
 
 
 .perguntas {
-    padding: 5em;
+    padding: 2em;
 }
 .perguntas label {
     display: block;
     line-height: 40px;
     color: white;
+    font-family: 'Quicksand', sans-serif;
 }
 
-.perguntas p{
- line-height: 40px;   
-}
-.perguntas input[type="submit"]{
+input[type="submit"]{
     position: relative;
-    width: 120px;
+    float: right;
+    width: 19%;
     height: 44px;
-    background-color: #004d99;
+    background-color: #436f99;
     color: white;
     border: none;
-    top: 10px;
-    border-radius: 2px;
-    font-size: 15px;
-    
-    
+    border-radius: 7px;
+    font-size: 17px;
+    bottom: 40px;
+    cursor: pointer;
 }
 
 input[type="submit"]:hover{
-    background-color: #004080;
+    background-color: #2d5275;
 }
 
-
-li.separador {
-    margin-top: 10px;
-    width: 100%;
-    border-top: 4px solid #404347;
-    list-style-type: none;
-    border-radius: 100px;
-    opacity: 0.5;
-}
-.tudo{
-    width: 800px;
-    height: auto;
-}
 
 footer{
     position:absolute;
@@ -160,6 +135,15 @@ footer p{
     color: white;
     text-align: center;
     font-family: 'Quicksand', sans-serif;
+}
+.materia{
+    text-align: center;
+    width: 100%;
+}
+.materia label{
+    position: relative;
+    color: white;
+    left: 50px;
 }
 
 

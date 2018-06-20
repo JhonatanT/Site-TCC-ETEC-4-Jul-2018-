@@ -1,4 +1,4 @@
-php?id=CTYPE HTML>
+<?php session_start(); ?>
 <html>
     <head>
         <meta charset="UTF-8">
@@ -29,122 +29,82 @@ php?id=CTYPE HTML>
                         <br>
                         <br>
                         <br>
+						<br>
+                        <center>
+                            <?php
+                                echo $_SESSION['usuarioNome'];//pegando o nome do usuario
+                                echo"<style>
+                                    body
+                                    {
+                                        position: relative;
+                                        text-align:left;
+                                        color: white;
+                                    }
+                                </style>";
+                            ?>
+                        </center>
                         <ul>
-                            <li><a href = "perfil.html" title="Perfil de úsuario">Usúario</a><span class="icon-user"></span> </li>
-                            <li><a href = "materias.html" title="Inicio"><span class="icon-lab"></span> Matérias</a></li>
-                            <li><a href = "DESEMPENHO.html" title="Desempenho"><span class="icon-chart"></span> Desempenho</a></li>
-                            <li><a href = "gabaritos.html" title="Gabaritos"><span class="icon-checkmark"></span> Gabaritos</a></li>
-                            <li><a href = "enem.php" title="Enem"><span class="icon-open-book"></span> Enem</a></li>
-                            <li><a href = "redacao.html" title="Redação"><span class="icon-lightbulb_outline"></span> Dicas para o ENEM</a></li>
-                            <li><a href = "pdf.html" title="Pdf's para estudo"><span class="icon-file-pdf-o"></span> PDF para estudos</a></li>
-                            <li><a href = "download.html" title="Downloads"><span class="icon-download"></span>  Download</a></li>
-                            <li><a href = "FaleConosco.html" title="Fale Conosco"><span class="icon-bubbles4"></span> Fale Conosco</a></li>
-                            <li><a href = "AJUDA.html" title="Ajuda"><span class="icon-checkmark"></span> Ajuda</a></li>
-                            <li><a href = "login.html" title="Sair"><span class="icon-x"></span> Sair</a></li>
+                            <li><a href = "perfil.php" title="Perfil de úsuario">Usúario</a><span class="icon-user"></span> </li>
+							<li><a href = "materias.php" title="Inicio"><span class="icon-lab"></span> Matérias</a></li>
+							<li><a href = "DESEMPENHO.php" title="Desempenho"><span class="icon-chart"></span> Desempenho</a></li>
+							<li><a href = "gabaritos.php" title="Gabaritos"><span class="icon-checkmark"></span> Gabaritos</a></li>
+							<li><a href = "enem.php" title="Enem"><span class="icon-open-book"></span> Enem</a></li>
+							<li><a href = "redacao.php" title="Redação"><span class="icon-lightbulb_outline"></span> Dicas para o ENEM</a></li>
+							<li><a href = "pdf.php" title="Pdf's para estudo"><span class="icon-file-pdf-o"></span> PDF para estudos</a></li>
+							<li><a href = "download.php" title="Downloads"><span class="icon-download"></span>  Download</a></li>
+							<li><a href = "FaleConosco.html" title="Fale Conosco"><span class="icon-bubbles4"></span> Fale Conosco</a></li>
+							<li><a href = "AJUDA.php" title="Ajuda"><span class="icon-help"></span> Ajuda</a></li>
+							<li><a href = "login.php" title="Sair"><span class="icon-x"></span> Sair</a></li>
                         </ul>
                     </nav>
                 </header>
                 <div class="oi">
             <dl class="materias">
                 <dt>ARTES</dt>
-<<<<<<< HEAD
-                <dd><a href="exercicios.html">Arte Moderna</a></dd>
-                <dd><a href="exercicios.html">Expressionismo</a></dd>
-                <dd><a href="exercicios.html">Renascimento</a></dd>
-                <hr/>
-                <dt>BIOLOGIA</dt>
-                <dd><a href="exercicios.html">Bioquímica Celular</a></dd>
-                <dd><a href="exercicios.html">Ecologia</a></dd>
-                <dd><a href="exercicios.html">Genética</a></dd>
-                <hr/>
-                <dt>FILOSOFIA</dt>
-                <dd><a href="exercicios.html">Existencialismo</a></dd>
-                <dd><a href="exercicios.html">Iluminismo</a></dd>
-                <dd><a href="exercicios.html">Política, Corrupção e Ética</a></dd>
-                <hr/>
-                <dt>FÍSICA</dt>
-                <dd><a href="exercicios.html">Calorimetria</a></dd>
-                <dd><a href="exercicios.html">Hidroestática</a></dd>
-                <dd><a href="exercicios.html">Ondas Eletromâgneticas</a></dd>
-                <hr/>
-                <dt>GEOGRAFIA</dt>
-                <dd><a href="exercicios.html">Agropecuária Brasileira</a></dd>
-                <dd><a href="exercicios.html">Geopolítica Mundial</a></dd>
-                <dd><a href="exercicios.html">Oriente Médio - Estado Islâmico</a></dd>
-                <hr/>
-                <dt>HISTÓRIA</dt>
-                <dd><a href="exercicios.html">Independência do Brasil</a></dd>
-                <dd><a href="exercicios.html">Revolução Francesa</a></dd>
-                <dd><a href="exercicios.html">Segunda Guerra Mundial</a></dd>
-                <hr/>
-                <dt>INGLÊS</dt>
-                <dd><a href="exercicios.html">Artigos</a></dd>
-                <dd><a href="exercicios.html">Compreensão de texto</a></dd>
-                <dd><a href="exercicios.html">Verbos</a></dd>
-                <hr/>
-                <dt>MATEMÁTICA</dt>
-                <dd><a href="exercicios.html">Análise Combinatória</a></dd>
-                <dd><a href="exercicios.html">Progressão Aritmética</a></dd>
-                <dd><a href="exercicios.html">Progressão Geométrica</a></dd>
-                <hr/>
-                <dt>PORTUGUÊS</dt>
-                <dd><a href="exercicios.html">Figuras de Linguagem</a></dd>
-                <dd><a href="exercicios.html">Interpretação de Texto</a></dd>
-                <dd><a href="exercicios.html">Orações Subordinadas</a></dd>
-                <hr/>
-=======
                 <dd><a href="exercicios.php?id=">Arte Moderna</a></dd>
                 <dd><a href="exercicios.php?id=">Expressionismo</a></dd>
                 <dd><a href="exercicios.php?id=">Renascimento</a></dd>
+                <hr/>
                 <dt>BIOLOGIA</dt>
                 <dd><a href="exercicios.php?id=">Bioquímica Celular</a></dd>
                 <dd><a href="exercicios.php?id=">Ecologia</a></dd>
                 <dd><a href="exercicios.php?id=">Genética</a></dd>
-                <br>
-                
+                <hr/>
                 <dt>FILOSOFIA</dt>
                 <dd><a href="exercicios.php?id=">Existencialismo</a></dd>
                 <dd><a href="exercicios.php?id=">Iluminismo</a></dd>
                 <dd><a href="exercicios.php?id=">Política, Corrupção e Ética</a></dd>
-                <br>
-                
+                <hr/>
                 <dt>FÍSICA</dt>
                 <dd><a href="exercicios.php?id=">Calorimetria</a></dd>
                 <dd><a href="exercicios.php?id=">Hidroestática</a></dd>
                 <dd><a href="exercicios.php?id=">Ondas Eletromâgneticas</a></dd>
-                <br>
-                
+                <hr/>
                 <dt>GEOGRAFIA</dt>
                 <dd><a href="exercicios.php?id=">Agropecuária Brasileira</a></dd>
                 <dd><a href="exercicios.php?id=">Geopolítica Mundial</a></dd>
                 <dd><a href="exercicios.php?id=">Oriente Médio - Estado Islâmico</a></dd>
-                <br>
-                
+                <hr/>
                 <dt>HISTÓRIA</dt>
                 <dd><a href="exercicios.php?id=">Independência do Brasil</a></dd>
                 <dd><a href="exercicios.php?id=">Revolução Francesa</a></dd>
                 <dd><a href="exercicios.php?id=">Segunda Guerra Mundial</a></dd>
-                <br>
-                
+                <hr/>
                 <dt>INGLÊS</dt>
                 <dd><a href="exercicios.php?id=">Artigos</a></dd>
                 <dd><a href="exercicios.php?id=">Compreensão de texto</a></dd>
                 <dd><a href="exercicios.php?id=">Verbos</a></dd>
-                <br>
-                
+                <hr/>
                 <dt>MATEMÁTICA</dt>
                 <dd><a href="exercicios.php?id=">Análise Combinatória</a></dd>
                 <dd><a href="exercicios.php?id=">Progressão Aritmética</a></dd>
                 <dd><a href="exercicios.php?id=">Progressão Geométrica</a></dd>
-                <br>
-                
+                <hr/>
                 <dt>PORTUGUÊS</dt>
                 <dd><a href="exercicios.php?id=">Figuras de Linguagem</a></dd>
                 <dd><a href="exercicios.php?id=">Interpretação de Texto</a></dd>
                 <dd><a href="exercicios.php?id=">Orações Subordinadas</a></dd>
-                <br>
-                
->>>>>>> 71a5e8534f723588253b58b626831415b00e4a16
+                <hr/>
                 <dt>QUIMÍCA</dt>
                 <dd><a href="exercicios.php?id=">Cadeias Carbônicas</a></dd>
                 <dd><a href="exercicios.php?id=">Compostos iônicos</a></dd>
@@ -152,17 +112,10 @@ php?id=CTYPE HTML>
                 <br>
                 <hr/>
                 <dt>SOCIOLOGIA</dt>
-<<<<<<< HEAD
-                <dd><a href="exercicios.html">Cidadania</a></dd>
-                <dd><a href="exercicios.html">Movimentos Sociais</a></dd>
-                <dd><a href="exercicios.html">Sociologia Comtemporânea</a></dd>
-=======
                 <dd><a href="exercicios.php?id=">Cidadania</a></dd>
                 <dd><a href="exercicios.php?id=">Movimentos Sociais</a></dd>
                 <dd><a href="exercicios.php?id=">Sociologia Comtemporânea</a></dd>
                 <br>
-                        
->>>>>>> 71a5e8534f723588253b58b626831415b00e4a16
 	           </dl>
             
         </div>
