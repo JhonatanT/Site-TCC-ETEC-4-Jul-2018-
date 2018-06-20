@@ -61,9 +61,9 @@ foreign key (cod_usuario) references tbUsuario(id_usuario),
 foreign key (cod_disciplina) references tbDisciplina(id_disciplina)
 ); 
 
-insert into tbusuario(nome,sobrenome,email,senha,data_cadastro)
+insert into tbusuario(nome_completo,email,senha)
 values
-('Gustavo','Mendes Ribeiro Costa','Gcosta@123.com','123456',current_date());
+('ITECH FORCE','t@gmail.com','1234');
 
 select*from tbUsuario;
 
