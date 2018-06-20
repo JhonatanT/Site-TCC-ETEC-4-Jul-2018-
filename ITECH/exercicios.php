@@ -6,9 +6,8 @@
     $conexao = mysqli_connect($host, $root, $senha, $bd) or die (mysqli_error());
 
     mysqli_select_db($conexao, $bd) or die(mysqli_error());
-
-    $Temas = $_POST['Temas']
-
+    session_start();//iniciando as variaveis globais
+    echo"<style> body{ position: relative; text-align:left; color: white; } </style>";
 ?>
 <!DOCTYPE HTML>
 <html lang="PT-BR">
@@ -28,7 +27,6 @@
         x.classList.toggle("change");
         }
         </script>
-        <main>
             <div class="content-all">
                 <header class="cabecalho1">
                     <div class="container" onclick="document.getElementById('check').checked = !document.getElementById('check').checked; myFunction(this)">
@@ -38,12 +36,10 @@
                     </div>
                     <input type="checkbox" id="check">
                     <nav class="menu">	
-                        <ul>
                             <br>
                             <br>
                             <br>
                             <br>
-                            <li><a href = "index.html" title="Inicio"><span class="icon-home"></span>&nbsp &nbsp Matérias</a></li>
                             <ul>
                             <li><a href = "perfil.php" title="Perfil de úsuario"><?php echo $_SESSION['usuarioNome']; ?></a><span class="icon-user"></span> </li>
                             <li><a href = "materias.php" title="Inicio"><span class="icon-lab"></span> Matérias</a></li>
