@@ -6,10 +6,10 @@
 <html lang="PT-BR">
     <head>
         <meta charset="UTF-8">
-        <meta name="descriprion" content="">
-        <title>Enem</title>
-        <link rel="stylesheet" href="../ITECH/cssIndex/enem.css">
+        <meta name="description" content="">
+        <title>Provas</title>
         <link rel="stylesheet" href="../ITECH/cssIndex/menu.css">
+        <link rel="stylesheet" href="../ITECH/cssIndex/gabarito.css">
         <link rel="stylesheet" href="../ITECH/style.css">
         <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon" />
     </head>
@@ -27,7 +27,7 @@
                         <div class="bar3 icon-content"></div>
                     </div>
                     <input type="checkbox" id="check">
-                    <nav class="menu">	
+                    <nav class="menu">
                         <br>
                         <br>
                         <br>
@@ -48,8 +48,8 @@
                     </nav>
                 </header>
                 <footer>
-                    <p>Todos os direitos reservados © 2018</p>
-                </footer>
+                <p>Todos os direitos reservados © 2018</p>
+            </footer>
             </div>
     </body>
 </html>
