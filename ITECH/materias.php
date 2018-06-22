@@ -7,9 +7,12 @@
     mysqli_set_charset( $conexao, 'utf8'); 
 
     mysqli_select_db($conexao, $bd) or die(mysqli_error());
-
-    $consulta = "Select id_materia, temas from tbMateria";
+    $consulta = "SELECT M.id_materia, M.temas,M.cod_disciplina ,D.disciplinas,D.id_disciplina FROM tbmateria as M 
+INNER JOIN tbdisciplina as D on D.id_disciplina = M.cod_disciplina";
     $con = $conexao->query($consulta) or die($conexao->error);
+	
+	$disciplinas = "SELECT disciplinas from tbDisciplina;";
+	$cons = $conexao->query($disciplinas) or die ($conexao_>error);
 
     session_start();//iniciando as variaveis globais
     echo"<style> body{ position: relative; text-align:left; color: white; } </style>";
@@ -61,66 +64,15 @@
                 </header>
                 <div class="oi">
             <dl class="materias">
-                <?php
-                   while($dado = $con->fetch_array()){
-                ?>
-                <dt>ARTES</dt>
-                <dd><a href="exercicios.php?id=<?php echo $dado['id_materia']; ?>"><?php echo $dado['temas']; ?></a></dd>
-                <dd><a href="exercicios.php?id=<?php echo $dado['id_materia']; ?>"><?php echo $dado['temas']; ?></a></dd>
-                <dd><a href="exercicios.php?id=<?php echo $dado['id_materia']; ?>"><?php echo $dado['temas']; ?></a></dd>
+		
+				<?php
+					while($linha = mysqli_fetch_array($con)){
+				?>
+                
+				<dt><?php echo $linha['disciplinas'] ?></dt>      
+                <dd><a href="exercicios.php?id=<?php echo $linha['id_materia']; ?>&Nome =<?php echo $linha['temas']; ?>"><?php echo $linha['temas']; ?></a></dd>
                 <hr/>
-                <dt>BIOLOGIA</dt>
-                <dd><a href="exercicios.php?id=<?php echo $dado['id_materia']; ?>"><?php echo $dado['temas']; ?></a></dd>
-                <dd><a href="exercicios.php?id=<?php echo $dado['id_materia']; ?>"><?php echo $dado['temas']; ?></a></dd>
-                <dd><a href="exercicios.php?id=<?php echo $dado['id_materia']; ?>"><?php echo $dado['temas']; ?></a></dd>
-                <hr/>
-                <dt>FILOSOFIA</dt>
-                <dd><a href="exercicios.php?id=<?php echo $dado['id_materia']; ?>"><?php echo $dado['temas']; ?></a></dd>
-                <dd><a href="exercicios.php?id=<?php echo $dado['id_materia']; ?>"><?php echo $dado['temas']; ?></a></dd>
-                <dd><a href="exercicios.php?id=<?php echo $dado['id_materia']; ?>"><?php echo $dado['temas']; ?></a></dd>
-                <hr/>
-                <dt>FÍSICA</dt>
-                <dd><a href="exercicios.php?id=<?php echo $dado['id_materia']; ?>"><?php echo $dado['temas']; ?></a></dd>
-                <dd><a href="exercicios.php?id=<?php echo $dado['id_materia']; ?>"><?php echo $dado['temas']; ?></a></dd>
-                <dd><a href="exercicios.php?id=<?php echo $dado['id_materia']; ?>"><?php echo $dado['temas']; ?></a></dd>
-                <hr/>
-                <dt>GEOGRAFIA</dt>
-                <dd><a href="exercicios.php?id=<?php echo $dado['id_materia']; ?>"><?php echo $dado['temas']; ?></a></dd>
-                <dd><a href="exercicios.php?id=<?php echo $dado['id_materia']; ?>"><?php echo $dado['temas']; ?></a></dd>
-                <dd><a href="exercicios.php?id=<?php echo $dado['id_materia']; ?>"><?php echo $dado['temas']; ?></a></dd>
-                <hr/>
-                <dt>HISTÓRIA</dt>
-                <dd><a href="exercicios.php?id=<?php echo $dado['id_materia']; ?>"><?php echo $dado['temas']; ?></a></dd>
-                <dd><a href="exercicios.php?id=<?php echo $dado['id_materia']; ?>"><?php echo $dado['temas']; ?></a></dd>
-                <dd><a href="exercicios.php?id=<?php echo $dado['id_materia']; ?>"><?php echo $dado['temas']; ?></a></dd>
-                <hr/>
-                <dt>INGLÊS</dt>
-                <dd><a href="exercicios.php?id=<?php echo $dado['id_materia']; ?>"><?php echo $dado['temas']; ?></a></dd>
-                <dd><a href="exercicios.php?id=<?php echo $dado['id_materia']; ?>"><?php echo $dado['temas']; ?></a></dd>
-                <dd><a href="exercicios.php?id=<?php echo $dado['id_materia']; ?>"><?php echo $dado['temas']; ?></a></dd>
-                <hr/>
-                <dt>MATEMÁTICA</dt>
-                <dd><a href="exercicios.php?id=<?php echo $dado['id_materia']; ?>"><?php echo $dado['temas']; ?></a></dd>
-                <dd><a href="exercicios.php?id=<?php echo $dado['id_materia']; ?>"><?php echo $dado['temas']; ?></a></dd>
-                <dd><a href="exercicios.php?id=<?php echo $dado['id_materia']; ?>"><?php echo $dado['temas']; ?></a></dd>
-                <hr/>
-                <dt>PORTUGUÊS</dt>
-                <dd><a href="exercicios.php?id=<?php echo $dado['id_materia']; ?>"><?php echo $dado['temas']; ?></a></dd>
-                <dd><a href="exercicios.php?id=<?php echo $dado['id_materia']; ?>"><?php echo $dado['temas']; ?></a></dd>
-                <dd><a href="exercicios.php?id=<?php echo $dado['id_materia']; ?>"><?php echo $dado['temas']; ?></a></dd>
-                <hr/>
-                <dt>QUIMÍCA</dt>
-                <dd><a href="exercicios.php?id=<?php echo $dado['id_materia']; ?>"><?php echo $dado['temas']; ?></a></dd>
-                <dd><a href="exercicios.php?id=<?php echo $dado['id_materia']; ?>"><?php echo $dado['temas']; ?></a></dd>
-                <dd><a href="exercicios.php?id=<?php echo $dado['id_materia']; ?>"><?php echo $dado['temas']; ?></a></dd>
-                <br>
-                <hr/>
-                <dt>SOCIOLOGIA</dt>
-                <dd><a href="exercicios.php?id=<?php echo $dado['id_materia']; ?>"><?php echo $dado['temas']; ?></a></dd>
-                <dd><a href="exercicios.php?id=<?php echo $dado['id_materia']; ?>"><?php echo $dado['temas']; ?></a></dd>
-                <dd><a href="exercicios.php?id=<?php echo $dado['id_materia']; ?>"><?php echo $dado['temas']; ?></a></dd>
-                <br>
-                <?php } ?>
+				<?php } ?>
 	           </dl>
             
         </div>
