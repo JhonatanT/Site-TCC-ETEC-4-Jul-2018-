@@ -39,3 +39,10 @@ footer p{
     left: 200px;
     font-family: 'Quicksand', sans-serif;
 }
+.topicos a{
+    color: #436f99;
+    text-decoration: none;
+}
+.topicos a:hover{
+    text-decoration: underline;
+}

@@ -50,8 +50,11 @@
             </nav>
         </header>
         <div class="topicos">
-            <h2>• Esqueceu sua senha?</h2>
-            <p>O melhor jeito de estar preparado é aprofundar os conhecimentos nos temas que mais caem.</p>
+            <h2>• Como baixar a versão desktop?</h2>
+            <p>Para se fazer o Download do programa Gennius será necessário acessar o menu lateral e clicar no ítem Download.
+Ao acessar a página Download, procure pelo botão Fazer Download e clique. O programa começará a ser baixado e o procedimento poderá ser acompanhado na barra de download, localizada na parte inferior do site ou acima da barra de tarefas. 
+Download feito, deve-se abrir, aceitar os termos de uso e instalar o programa Gennius. 
+</p>
         <hr/>
         </div>
         <footer>
