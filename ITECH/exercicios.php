@@ -4,10 +4,13 @@
     $senha="";
     $bd="GenniusDB";
     $conexao = mysqli_connect($host, $root, $senha, $bd) or die (mysqli_error());
-
+	mysqli_set_charset( $conexao, 'utf8');
     mysqli_select_db($conexao, $bd) or die(mysqli_error());
     session_start();//iniciando as variaveis globais
     echo"<style> body{ position: relative; text-align:left; color: white; } </style>";
+	$consulta = "SELECT Q.id_questao, Q.edicao,Q.banca,Q.enunciado,M.temas,Q.caminho,Q.nome_imagem,A.texto, A.correta FROM tbquestao AS QINNER JOIN tbMateria AS M ON Q.cod_materia = M.id_materia LEFT JOIN tbAlternativa AS A ON  A.cod_questao = Q.id_questaoWHERE M.id_materia = 1 ORDER BY Q.id_questao;";
+	$con = $conexao->query($consulta) or die ($consulta->error);
+	$enunciado = "SELECT enunciado from tbQuestao;";
 ?>
 <!DOCTYPE HTML>
 <html lang="PT-BR">
@@ -56,16 +59,24 @@
                     </nav>
                 </header>
                 <div class="materia">
-                    <label id="nomeMateria">Nome da Materia</label>
+                    <label id="nomeMateria"></label>
                 </div>
             <div class="perguntas">
                 <div>
-                    <p id="p1">pergunta 1</p>
-                    <label><input type="radio" class="option-input radio" name="example"  />EXEMPLO</label>
-                    <label><input type="radio" class="option-input radio" name="example" />EXEMPLO</label>
-                    <label><input type="radio" class="option-input radio" name="example" />EXEMPLO</label>
-                    <label><input type="radio" class="option-input radio" name="example" />EXEMPLO</label>
-                    <label><input type="radio" class="option-input radio" name="example" />EXEMPLO</label>
+					<?php
+					while($linha = mysqli_fetch_array($con)){
+						$enuncia = $linha['enunciado'];	
+						$enunciado;
+					?>
+					<?php if ($enunciado == $enuncia){ ?>
+<!--                    tem que aumentar o tamanho da label e aumentar a largura do quadrado-->
+                    <label><input type="radio" class="option-input radio" name="example" value="<?php $linha['correta'] ?>" /><?php echo $linha['texto']; ?></label>
+					<?php } ?>
+					<?php if ($enunciado != $enuncia){ ?>
+                    <p id="p1"><?php echo $linha['enunciado']; ?></p>
+					<label><input type="radio" class="option-input radio" name="example" value="<?php $linha['correta'] ?>" /><?php echo $linha['texto']; ?></label>
+					<?php } ?>
+					<?php  $enunciado = $enuncia; } ?>
                 <input type="submit" value="Responder" name="botaoEnviar">
             </div>
         </div>

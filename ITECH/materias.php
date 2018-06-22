@@ -64,15 +64,26 @@ INNER JOIN tbdisciplina as D on D.id_disciplina = M.cod_disciplina";
                 </header>
                 <div class="oi">
             <dl class="materias">
-		
+			<center><h1>Materias e Temas</h1></center>
 				<?php
 					while($linha = mysqli_fetch_array($con)){
+						$discipli = $linha['disciplinas'];
+						$disciplinas;
+			
 				?>
-                
-				<dt><?php echo $linha['disciplinas'] ?></dt>      
-                <dd><a href="exercicios.php?id=<?php echo $linha['id_materia']; ?>&Nome =<?php echo $linha['temas']; ?>"><?php echo $linha['temas']; ?></a></dd>
-                <hr/>
+				
+				<?php if ($disciplinas == $discipli){ ?>
+				<dd><a href="exercicios.php?id=<?php echo $linha['id_materia']; ?>&Nome =<?php echo $linha['temas']; ?>"><?php echo $linha['temas']; ?></a></dd>
+
 				<?php } ?>
+				<?php if ($disciplinas != $discipli) { ?>
+				<hr/>
+				<dt><?php echo $linha['disciplinas'] ?></dt> 				
+                <dd><a href="exercicios.php?id=<?php echo $linha['id_materia']; ?>&Nome =<?php echo $linha['temas']; ?>"><?php echo $linha['temas']; ?></a></dd>
+				<?php } ?>
+				<?php $disciplinas = $discipli; } ?>
+				<hr/>
+				
 	           </dl>
             
         </div>
