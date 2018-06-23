@@ -12,7 +12,7 @@
  A.texto, A.correta FROM tbquestao AS Q 
 INNER JOIN tbMateria AS M ON Q.cod_materia = M.id_materia 
 LEFT JOIN tbAlternativa AS A ON  A.cod_questao = Q.id_questao
-WHERE M.id_materia = 2 ORDER BY Q.id_questao;";
+WHERE M.id_materia = 1 ORDER BY Q.id_questao;";
 	$con = mysqli_query($conexao, $consulta) or die ($consulta->error);
 	$enunciado = "SELECT enunciado from tbQuestao;";
 ?>
@@ -71,15 +71,21 @@ WHERE M.id_materia = 2 ORDER BY Q.id_questao;";
 					while($linha = mysqli_fetch_array($con)){
 						$enuncia = $linha['enunciado'];	
 						$enunciado;
+                        $imagem = $linha['nome_imagem'];
+                        $caminho = $linha['caminho'];
 					?>
+                    
 					<?php if ($enunciado == $enuncia){ ?>
 <!--                    tem que aumentar o tamanho da label e aumentar a largura do quadrado-->
                     <label><input type="radio" class="option-input radio" name="example" value="<?php $linha['correta'] ?>" /><?php echo $linha['texto']; ?></label>
 					<?php } ?>
 					<?php if ($enunciado != $enuncia){ ?>
                     <p id="p1"><?php echo $linha['enunciado']; ?></p>
-					<label><input type="radio" class="option-input radio" name="example" value="<?php $linha['correta'] ?>" /><?php echo $linha['texto']; ?></label>
+                    <?php if($imagem != ""){ ?>
+                    <center><img src="pictures/ImgQues/<?php echo $caminho ?>/<?php echo $imagem ?>.png" align="center"/></center>
 					<?php } ?>
+					<label><input type="radio" class="option-input radio" name="example" value="<?php $linha['correta'] ?>" /><?php echo $linha['texto']; ?></label>
+                    <?php } ?>
 					<?php  $enunciado = $enuncia; } ?>
                     <br>
                     <br>
