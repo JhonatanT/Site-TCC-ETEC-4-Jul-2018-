@@ -8,8 +8,12 @@
     mysqli_select_db($conexao, $bd) or die(mysqli_error());
     session_start();//iniciando as variaveis globais
     echo"<style> body{ position: relative; text-align:left; color: white; } </style>";
-	$consulta = "SELECT Q.id_questao, Q.edicao,Q.banca,Q.enunciado,M.temas,Q.caminho,Q.nome_imagem,A.texto, A.correta FROM tbquestao AS QINNER JOIN tbMateria AS M ON Q.cod_materia = M.id_materia LEFT JOIN tbAlternativa AS A ON  A.cod_questao = Q.id_questaoWHERE M.id_materia = 1 ORDER BY Q.id_questao;";
-	$con = $conexao->query($consulta) or die ($consulta->error);
+	$consulta = "SELECT Q.id_questao, Q.edicao,Q.banca,Q.enunciado,M.temas,Q.caminho,Q.nome_imagem,
+ A.texto, A.correta FROM tbquestao AS Q 
+INNER JOIN tbMateria AS M ON Q.cod_materia = M.id_materia 
+LEFT JOIN tbAlternativa AS A ON  A.cod_questao = Q.id_questao
+WHERE M.id_materia = 2 ORDER BY Q.id_questao;";
+	$con = mysqli_query($conexao, $consulta) or die ($consulta->error);
 	$enunciado = "SELECT enunciado from tbQuestao;";
 ?>
 <!DOCTYPE HTML>
@@ -77,6 +81,9 @@
 					<label><input type="radio" class="option-input radio" name="example" value="<?php $linha['correta'] ?>" /><?php echo $linha['texto']; ?></label>
 					<?php } ?>
 					<?php  $enunciado = $enuncia; } ?>
+                    <br>
+                    <br>
+                    <br>
                 <input type="submit" value="Responder" name="botaoEnviar">
             </div>
         </div>
