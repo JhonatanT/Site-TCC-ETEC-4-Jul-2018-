@@ -1,13 +1,14 @@
-
 body{
     background: #202225;
     overflow-x: hidden;
 }
 
 .tudo{
+    position: relative;
     margin: auto;
-    width: 700px;
+    width: 54%;
     height: auto;
+    left: 50px;
 }
 .tudo h2{
     font-family: 'Quicksand', sans-serif;
@@ -19,16 +20,8 @@ body{
     padding: 0 20px;
     color: white;
 }
-.tudo hr{
-    width: 400px;
-    height: 1px;
-    background-color: #436f99;
-    border-radius: 10px;
-    border-color: #436f99;
-    border-top-width: 0px;
-}
+
 footer{
-    position:absolute;
     bottom:0;
     width:100%;
 }
@@ -45,4 +38,19 @@ footer p{
 }
 .topicos a:hover{
     text-decoration: underline;
+}
+.separador {
+    position: relative;
+    top: 10px;
+    margin: auto;
+    width: 100%; 
+    border-top: 2px solid #363638;
+}
+h1{
+    color: white;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 37px;
+    top: 25px;
+    position: relative;
+    left: 15px;
 }

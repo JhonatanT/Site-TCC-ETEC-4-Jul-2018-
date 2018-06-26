@@ -1,24 +1,24 @@
 $(document).ready(function(){
-    $("#signup_btn").click(function(){
-        $("#main").animate({left:"22.5%"},400); 
-        $("#main").animate({left:"30%"},500); 
-        $("#loginform").css("visibility","hidden");
-        $("#loginform").animate({left:"25%"},400);
+    $(".btnCadastro").click(function(){
+        $(".principal").animate({left:"22.5%"},400); 
+        $(".principal").animate({left:"30%"},500); 
+        $(".login").css("visibility","hidden");
+        $(".login").animate({left:"25%"},400);
         
-        $("#signupform").animate({left:"17%"},400);
-        $("#signupform").animate({left:"30%"},500);
-        $("#signupform").css("visibility","visible");
+        $(".Cadastro").animate({left:"17%"},400);
+        $(".Cadastro").animate({left:"30%"},500);
+        $(".Cadastro").css("visibility","visible");
     }); 
     
-    $("#login_btn").click(function(){
-        $("#main").animate({left:"77.5%"},400); 
-        $("#main").animate({left:"70%"},500);
-        $("#signupform").css("visibility","hidden");
-        $("#signupform").animate({left:"75%"},400);
+    $(".btnLogin").click(function(){
+        $(".principal").animate({left:"77.5%"},400); 
+        $(".principal").animate({left:"70%"},500);
+        $(".Cadastro").css("visibility","hidden");
+        $(".Cadastro").animate({left:"75%"},400);
         
-        $("#loginform").animate({left:"83.5%"},400);
-        $("#loginform").animate({left:"70%"},500);
-        $("#loginform").css("visibility","visible");
+        $(".login").animate({left:"83.5%"},400);
+        $(".login").animate({left:"70%"},500);
+        $(".login").css("visibility","visible");
     });
 });
 

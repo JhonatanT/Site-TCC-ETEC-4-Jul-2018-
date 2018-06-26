@@ -1,7 +1,10 @@
+
+<!--
 <?Php
     session_start();//iniciando as variaveis globais
     echo"<style> body{ position: relative; text-align:left; color: white; } </style>";
 ?>
+-->
 <DOCTYPE HTML!>
 <html>
     <head>
@@ -50,12 +53,30 @@
             </nav>
         </header>
         <div class="topicos">
+            <h1>Duvidas Frequentes:</h1>
+            <div class="separador"></div>
+            <h2>• Como visualizar meu Desempenho no Site?</h2>
+            <p>Abra o menu lateral e clique na opção "<a href="DESEMPENHO.php">Desempenho</a>"<br>
+                Nesta página o usuário terá acesso a sua porcetagem de desenvlvimento em determinadas materias.
+<!--                terminar essa -->
+            </p>
+            <div class="separador"></div>
             <h2>• Como baixar a versão desktop?</h2>
-            <p>Para se fazer o Download do programa Gennius será necessário acessar o menu lateral e clicar no ítem Download.
-Ao acessar a página Download, procure pelo botão Fazer Download e clique. O programa começará a ser baixado e o procedimento poderá ser acompanhado na barra de download, localizada na parte inferior do site ou acima da barra de tarefas. 
-Download feito, deve-se abrir, aceitar os termos de uso e instalar o programa Gennius. 
-</p>
-        <hr/>
+            <p>Para baixar a versão desktop do Gennius será necessário acessar o menu lateral e clicar na aba <a href="download.php">Download.</a><br>
+                Ao acessar a página Download, procure pelo botão "Download para windows" e clique logo o download será inicido. 
+                Download feito, abra o programa, aceitar os termos de uso e instale.
+            </p>
+            
+            <div class="separador"></div>
+            <h2>• Como ficar atualizado nas datas de vestibulares?</h2>
+            <p>Para visualizar o calendário de vestibulares, o usuário deverá ter o software instalado em seu computador e então deverá acessar o menu lateral e clicar em 'calendário'.<br>
+            Assim o usuário terá acesso aos vestibulares mais recentes que acontecerão no Brasil.</p>
+            <div class="separador"></div>
+            <h2>• Como posso visualizar o meu Desempenho no software?</h2>
+            <p>Primeiramente, para ter um desempenho o usuário terá que interagir no software, responda questões de diferentes temas para o calculo de seu aproveitamento.<br>
+            Abra o menu lateral e clique em "Desempenho" e então visualize todo o seu aproveitamento no Gennius.
+            </p>
+            <div class="separador"></div>
         </div>
         <footer>
             <p>Todos os direitos reservados © 2018</p>

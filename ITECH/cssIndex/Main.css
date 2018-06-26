@@ -1,12 +1,8 @@
 body{
-    margin: 0px;
-    padding: 0px;
-    background-color:url(../pictures/fundo.png) fixed center;
-    background-image: url(../pictures/fundo.png);
-    background-color: #0F2D51;
-    
+    background-color: #202225; 
+    overflow-x: hidden;
 }
-#box{
+.box{
     height: 250px;
     width: 1100px;
     background-color:#1a1a1a;
@@ -16,9 +12,9 @@ body{
     left: 50%;
     transform: translate(-50%,-50%);
 }
-#main{
-    height: 500px;
-    width: 500px;
+.principal{
+    height: 465px;
+    width: 450px;
     background-color:white;
     border-radius: 5px;
     position: absolute;
@@ -27,50 +23,50 @@ body{
     transform: translate(-50%,-50%);
     z-index: 99;
 }
-#loginform,#signupform{
+.login, .cadastro{
     position: absolute;
     top:50%;
     left: 70%;
     transform: translate(-50%,-50%);
     z-index: 999;
 }
-#signupform{
+.cadastro{
     top:45%;
     left: 75%;
     visibility: hidden;
 }
-#loginform h1,#signupform h1{
-    font-family: arial;
+.login h1, .cadastro h1{
+    font-family: 'Quicksand', sans-serif;
     font-size: 25px;
     color:  black;
 }
-#loginform input,#signupform input{
+.login input, .cadastro input{
     height: 40px;
     width: 300px;
     border: 0px;
     outline: none;
     border-bottom: 1px solid black;
-    margin: 5px;
+    margin: 4px;
+    font-family: 'Quicksand', sans-serif;
 }
-#loginform button,#signupform button{
-    height: 35px;
+.login button, .cadastro button{
+    height: 40px;
     width: 130px;
-    background-color: #036;
-    font-family: monospace;
-    font-size: 16px;
+    background-color: #436f99;
     color: white;
     border: none;
     outline: none;
     border-radius: 5px;
     margin-top: 30px;
-    margin-left: 175px;
+    float: right;
+    font-family: 'Quicksand', sans-serif;
 }
-#login_btn,#signup_btn{
+.btnLogin, .btnCadastro{
     height: 35px;
     width: 120px;
     background-color:transparent;
     color:white;
-    border:1px solid white;
+    border:2px solid #436f99;
     border-radius: 5px;
     outline: none;
     position: absolute;
@@ -79,67 +75,56 @@ body{
     transform: translate(-50%,-50%);
     transition: all .5s;
 }
-#signup_btn{
+.btnCadastro{
     left: 25%;
+    font-family: 'Quicksand', sans-serif;
+    border: 2px solid #436f99;
 }
-#login_btn:hover,#signup_btn:hover{
-    background-color:white;
-    color:#2d2d2d;
+.btnlogin:hover, .btnCadastro:hover{
+    background-color: #436f99;
+    color:white;
     cursor: pointer;
 }
-#login_msg,#signup_msg{
-    font-family: arial;
+.labelConta, .labelNConta{
+    font-family: 'Quicksand', sans-serif;
     font-size: 25px;
-    color:white;
+    color: white;
     position: absolute;
     top:35%;
     left: 75%;
     transform: translate(-50%,-50%);
     z-index: 1;
+    
 }
-#signup_msg{
+.labelConta{
     left: 25%;
 }
 
-#loginform button:hover,#signupform button:hover{
-    background-color: #00264d;
+.login button:hover, .cadastro button:hover{
+    background-color: #2d5275;
 }
 
-a:link {
+.login a:link {
     text-decoration: none;
 	color: gray;
     font-family: arial;
-    font-size: 12px;
+    font-size: 13px;
     position: relative;
-    top: -34px;
+    top: -33px;
     left: 15px;
+    font-family: 'Quicksand', sans-serif;
 }
-a:visited{
+.login a:visited{
     text-decoration: none;
     color: gray;
 }
 
-a:hover{
+h5 a:hover{
     text-decoration: underline;
     color: gray;
 }
 
-#voltar{
-    position: relative;
-    width: 40px;
-    height: 50px;
-    background-color: transparent;
-    background-image: url('../imagens/voltarhover.png');
-    background-repeat: no-repeat;
-    border: none;
-    top: 70px;
-    left: 20px;
-}
 
-#voltar:hover{
-    background-image: url('../imagens/voltar.png');
-    
-}
 .php{
     text-align: center;
     color: firebrick;

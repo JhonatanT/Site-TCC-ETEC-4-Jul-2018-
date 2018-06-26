@@ -1,7 +1,38 @@
 body{
     background-color: #202225;
+    overflow-x: hidden;
+    
 }
 .php{
     text-align: center;
+    color: white;
+}
+footer{
+    bottom:0;
+    width:100%;
+}
+
+footer p{
+    position: relative;
+    color: white;
+    left: 200px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.tudo{
+    position: relative;
+    margin: auto;
+    width: 54%;
+    height: auto;
+    left: 50px;
+}
+.tudo h2{
+    font-family: 'Quicksand', sans-serif;
+    color: #436f99;
+    padding: 15px 0 0 0;
+}
+.tudo p{
+    font-family: 'Quicksand', sans-serif;
+    padding: 0 20px;
     color: white;
 }

@@ -1,5 +1,6 @@
+
 <?Php
-    session_start();
+    session_start();//iniciando as variaveis globais
     echo"<style> body{ position: relative; text-align:left; color: white; } </style>";
 ?>
 <!DOCTYPE HTML>
