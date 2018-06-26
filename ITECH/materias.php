@@ -21,7 +21,7 @@ INNER JOIN tbdisciplina as D on D.id_disciplina = M.cod_disciplina";
     <head>
         <meta charset="UTF-8">
         <meta name="description" content="">
-        <title>Matérias</title>
+        <title>Matérias - GENNIUS</title>
         <link rel="stylesheet" href="../ITECH/style.css">
         <link rel="stylesheet" href="../ITECH/cssIndex/materias.css">
         <link rel="stylesheet" href="../ITECH/cssIndex/menu.css">
@@ -49,7 +49,7 @@ INNER JOIN tbdisciplina as D on D.id_disciplina = M.cod_disciplina";
                         <br>
                         <ul>
                             <li><a href = "perfil.php" title="Perfil de úsuario"><?php echo $_SESSION['usuarioNome']; ?></a><span class="icon-user"></span> </li>
-                            <li><a href = "materias.php" title="Inicio"><span class="icon-lab"></span> Matérias</a></li>
+                            <li><a href = "materias.php" title="Matérias e temas"><span class="icon-lab"></span> Matérias</a></li>
                             <li><a href = "DESEMPENHO.php" title="Desempenho"><span class="icon-chart"></span> Desempenho</a></li>
                             <li><a href = "gabaritos.php" title="Gabaritos"><span class="icon-checkmark"></span> Gabaritos</a></li>
                             <li><a href = "enem.php" title="Enem"><span class="icon-open-book"></span> Enem</a></li>
@@ -64,7 +64,7 @@ INNER JOIN tbdisciplina as D on D.id_disciplina = M.cod_disciplina";
                 </header>
                 <div class="oi">
             <dl class="materias">
-			<center><h1>Materias e Temas</h1></center>
+			<h1>Matérias e Temas</h1>
 				<?php
 					while($linha = mysqli_fetch_array($con)){
 						$discipli = $linha['disciplinas'];
@@ -83,9 +83,7 @@ INNER JOIN tbdisciplina as D on D.id_disciplina = M.cod_disciplina";
 				<?php } ?>
 				<?php $disciplinas = $discipli; } ?>
 				<hr/>
-				
 	           </dl>
-            
         </div>
             <footer>
                  <p>Todos os direitos reservados © 2018</p>

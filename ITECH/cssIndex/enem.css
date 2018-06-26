@@ -13,26 +13,56 @@ footer{
 }
 
 footer p{
+    text-align: center;
     position: relative;
     color: white;
-    left: 200px;
     font-family: 'Quicksand', sans-serif;
 }
 
-.tudo{
+
+#provas{
     position: relative;
-    margin: auto;
-    width: 54%;
+    top: 30px;
+    width: 60%;
     height: auto;
-    left: 50px;
+    margin: auto;
+    left: 30px;
 }
-.tudo h2{
+#provas ul li{
+    list-style: none;
+    color: white;
+    font-family: 'Quicksand', sans-serif;
+    padding: 10px;
+    font-size: 20px;
+    margin-left: 2%;
+}
+#provas ul li button{
+    float: right;
+    margin-left: 10px;
+    border: none;
+    width: 90px;
+    height: 25px;
+    border-radius: 2px;
+}
+.amarela{
+    background-color: #f7e37e;
+}
+.azul{
+    background-color: #7dc0f7;
+}
+.rosa{
+    background-color: #ffa0a0;
+}
+
+.cinza{
+    background-color: #a8a8a8;
+}
+#provas ul li button a{
+    text-decoration: none;
+    color: black;
+}
+h2{
     font-family: 'Quicksand', sans-serif;
     color: #436f99;
-    padding: 15px 0 0 0;
-}
-.tudo p{
-    font-family: 'Quicksand', sans-serif;
-    padding: 0 20px;
-    color: white;
+    font-size: 25px;    
 }

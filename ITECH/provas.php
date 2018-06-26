@@ -3,7 +3,7 @@
     echo"<style> body{ position: relative; text-align:left; color: white; } </style>";
 ?>
 <!DOCTYPE HTML>
-<html lang="PT-BR">
+<html>
     <head>
         <meta charset="UTF-8">
         <meta name="description" content="">
