@@ -30,14 +30,30 @@
                 session_start();//iniciando as variveis globais
                 if((isset($_POST['txtUsuario'])) && (isset($_POST['txtSenha'])))
                 {
-                    $usuario = mysqli_real_escape_string($conexao, $_POST['txtUsuario']); //escapar de caracteres especiais como aspas, prevenindo sql injection
-                    $senha = mysqli_real_escape_string($conexao, $_POST['txtSenha']);
-                    
+                                        // username and password sent from form
+                    $usuario=$_POST['login'];
+                    $senha=$_POST['password'];
+
+
+                    // VERIFICA ANTES DA CONSULTA SE OS PARAMETROS FORAM PASSADOS
+                    if (empty($usuario)) {
+                    exit("<script>alert('Preencha o campo login'); history.back();</script>");
+                    }
+                    if (empty($senha)) {
+                    exit("<script>alert('Informe o campo senha'); history.back();</script>");
+                    }
+
+                    // To protect MySQL injection (more detail about MySQL injection)
+                    $usuario = stripslashes($myusername);
+                    $senha = stripslashes($mypassword);
+                    $usuario = mysql_real_escape_string($myusername);
+                    $senha = mysql_real_escape_string($mypassword);
+
                     $sql = mysqli_query($conexao, "SELECT id_usuario,nome_completo, email, senha FROM tbUsuario WHERE email = '$usuario' and senha = '$senha' LIMIT 1") or die (mysqli_error());
                     $resultado = mysqli_fetch_assoc($sql);
                     if(empty($resultado))
                     {
-                        echo"<center>Usuário ou senha inválidos! Redirecionando...</center>";
+                        echo ("<script>alert('Login incorreto'); location.href='index.php';</script>"); 
                         echo"<script>loginfailed()</script>";
                     }elseif(isset($resultado))
                     {
