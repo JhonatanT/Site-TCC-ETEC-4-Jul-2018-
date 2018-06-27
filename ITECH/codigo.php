@@ -1,3 +1,4 @@
+
 <DOCTYPE html!>
 <html>
   <head>
@@ -8,14 +9,21 @@
     <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon"/>
   </head>
     <body>
+
         <div class="box">
             <h1>Digite seu E-mail e a sua resposta de segurança</h1>
+            <form name="valida" method="post" action="ValidandoRecuperarSenha.php">
+
             <input type="text" name="email" placeholder="E-mail">
-            <input type="text" name="resposta" placeholder="Resposta da pergunta de segurança"><br>
+            <input type="text" name="resposta" placeholder="Código de segurança"><br>
             <input type="submit" value="Enviar" name="botaoAcessar">
-            <button type="button" class="botao"><a href="Login.php">Voltar ao site</a></button>
+                <button type="button" class="botao"><a href="Login.html">Voltar ao site</a></button>
+
+            </form>
+
             <br>
         </div>
+
         <footer>
             <p>Todos os direitos reservados © 2018</p>
         </footer>

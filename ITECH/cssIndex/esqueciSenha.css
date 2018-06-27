@@ -15,7 +15,7 @@ body{
     border-radius: 10px;
 }
 
-input[type="password"]{
+input[type="password"] {
     position: relative;
     height: 8%;
     width: 80%;
@@ -28,8 +28,11 @@ input[type="password"]{
     font-family: 'Quicksand', sans-serif;
     font-size: 14px;
 }
-
 .container h1{
+    font-family: 'Quicksand', sans-serif;
+    color: #d8d8d8;
+}
+.container h2{
     font-family: 'Quicksand', sans-serif;
     color: #d8d8d8;
 }

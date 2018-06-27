@@ -1,7 +1,7 @@
 <?PHP
     $host="localhost";
     $root="root";
-    $senha="";
+    $senha="1234";
     $bd="GenniusDB";
     $conexao = mysqli_connect($host, $root, $senha, $bd) or die (mysqli_error());
 
@@ -20,7 +20,7 @@
 				//se não vá para o login
                 function loginfailed()
                 {
-                    setTimeout("window.location='Login.php'", 5000);
+                    setTimeout("window.location='Login.html'", 5000);
                 }
             </script>
             <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">

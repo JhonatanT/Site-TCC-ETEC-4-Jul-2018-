@@ -8,7 +8,7 @@
 				//se ele digitou o email certo vá para o painel
                 function carregando()
                 {
-                    setTimeout("window.location='Login.html'", 2000);
+                    setTimeout("window.location='recuperarSenha.php'", 2000);
                 }
             </script>
     <meta charset="utf-8">
