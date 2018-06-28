@@ -1,9 +1,11 @@
 body{
     background-color: #202225;
+    overflow-x: hidden;
 }
 footer p{
     text-align: center;
     font-family: 'Quicksand', sans-serif;
+    color: white;
 }
 footer{
     left: 5%;
@@ -11,4 +13,8 @@ footer{
     margin: auto;
 	position: absolute;
 	bottom: 0;
+}
+.piechart{
+    width: 900px;
+    height: 500px;
 }
