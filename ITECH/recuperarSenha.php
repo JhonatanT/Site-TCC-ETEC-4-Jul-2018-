@@ -1,3 +1,7 @@
+<?php
+session_start();
+?>
+
 <html>
         <head>
             <title>Recuperar Senha - Gennius</title>
@@ -8,11 +12,14 @@
         </head>
         <body>
             <div class="container">
-                <form name="login" method="post" action="acessar.php">
+                <form name="upandoSenha" method="post" action="upandoSenha.php">
                     <br>
-                    <h1>Alterar Senha</h1><br>
-                    <input type="password" name="password" placeholder="Nova Senha"><br>
-                    <input type="password" name="password" placeholder="Confirmar Senha">
+                    <h1>Alterar Senha</h1>
+                    <h3>Digite o Códido: <?php echo $_SESSION['usuarioId']; ?>, Para Confirmar</h3>
+                    <input type="password" name="ID" placeholder=<?php echo $_SESSION['usuarioId']; ?>>
+                    <br>
+                    <input type="password" name="Senha" placeholder="Nova Senha"><br>
+                    <input type="password" name="ConfirmSenha" placeholder="Confirmar Senha">
                     <br/>
                    
                     <br/>
@@ -21,6 +28,10 @@
                     <br/>
                 </form>
             </div>
+            <br>
+            <br>
+            <br>
+
             <footer>
                 <p> Todos os direitos reservados © 2018</p>
             </footer>
