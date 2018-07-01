@@ -18,7 +18,7 @@ mysqli_select_db($conexao, $bd) or die(mysqli_error());
         }
         function Validacodigofailed()
         {
-            setTimeout("window.location='Login.html'", 2000);
+            setTimeout("window.location='Login.php'", 2000);
         }
     </script>
 </head>
@@ -26,19 +26,19 @@ mysqli_select_db($conexao, $bd) or die(mysqli_error());
 <?PHP
 session_start();
 $Email=$_POST['email'];
-$resposta=$_POST['resposta'];
+$codigo=$_POST['codigo'];
 
-$sql = mysqli_query($conexao, "SELECT * FROM tbUsuario WHERE email = '$Email' AND pergunta='$resposta'") or die (mysqli_error());
-$row =  mysqli_num_rows($sql);
+$sqls = mysqli_query($conexao, "SELECT * FROM tbUsuario WHERE email = '$Email' AND codigo='$codigo'") or die (mysqli_error());
+$row =  mysqli_num_rows($sqls);
 
 if($row > 0)
 {
-    if((isset($_POST['email'])) && (isset($_POST['resposta'])))
+    if((isset($_POST['email'])) && (isset($_POST['codigo'])))
     {
-        $Email=$_POST['email'];
-        $resposta=$_POST['resposta'];
+        $Email = $_POST['email'];
+        $codigos = $_POST['codigo'];
 
-        $sql = mysqli_query($conexao, "SELECT id_usuario FROM tbUsuario WHERE email = '$Email' and pergunta = '$resposta' LIMIT 1") or die (mysqli_error());
+        $sql = mysqli_query($conexao, "SELECT id_usuario FROM tbUsuario WHERE email = '$Email' and codigo = '$codigos' LIMIT 1") or die (mysqli_error());
         $resultado = mysqli_fetch_assoc($sql);
         if(empty($resultado))
         {
