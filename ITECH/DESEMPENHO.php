@@ -35,8 +35,10 @@ $acerto = $_SESSION['acerto'];
         <link rel="stylesheet" href="../ITECH/cssIndex/desempenho.css">
         <link rel="stylesheet" href="../ITECH/cssIndex/menu.css">
         <link rel="stylesheet" href="../ITECH/style.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
         <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon" />
         <script type="text/javascript" src="jquery-1.12.0.min.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
         <script type="text/javascript" src="dist/Chart.bundle.min.js"></script>
         <script type="text/javascript">
             $(document).ready(function(){
@@ -93,6 +95,9 @@ $acerto = $_SESSION['acerto'];
                         <br>
                         <br>
                         <ul>
+                            <br>
+                            <br>
+                            <br>
                             <li><a href = "perfil.php" title="Perfil de úsuario"><?php echo $_SESSION['usuarioNome']; ?></a><span class="icon-user"></span> </li>
                             <li><a href = "materias.php" title="Inicio"><span class="icon-lab"></span> Matérias</a></li>
                             <li><a href = "DESEMPENHO.php" title="Desempenho"><span class="icon-chart"></span> Desempenho</a></li>
@@ -107,19 +112,14 @@ $acerto = $_SESSION['acerto'];
                         </ul>
                     </nav>
                 </header>
-
-                <center><h1>Seu Desempenho</h1 ></center>
-                <hr/>
+                <div class="topo">
+                    <h1>Desempenho Geral</h1>
+                    <div class="divisor"></div>
                 </div>
-
-                <footer>
-                   <center> <p>Todos os direitos reservados © 2018</p> </center>
-                </footer>
-            </div>
-         <center>
-         <div id="canvas-container" style="width:50%;">
-             <canvas id="chart" width="500" height="350"></canvas>
+         <div id="canvas-container">
+             <canvas id="chart">
+             </canvas>
          </div>
-         </center>
+        </div>
     </body>
 </html>

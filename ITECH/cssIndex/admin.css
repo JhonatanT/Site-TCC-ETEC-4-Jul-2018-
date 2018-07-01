@@ -1,12 +1,14 @@
+
 body{  
     background-color: #202225; 
     overflow-x: hidden;
+    margin: auto;
 }
 
 .container{
     margin: auto;
     position: relative;
-    top: 150px;
+    top: 130px;
     width: 30%;
     height: auto;
     background-color: #202225;
@@ -96,15 +98,25 @@ input[type="text"]:focus{
 input[type="submit"]:hover{
     background-color: #2d5275;
 }
-footer{
-    position:absolute;
-    bottom:0;
-    width:100%;
-}
-
-footer p{
-    color: white;
-    text-align: center;
+.footer{
+    height: 50px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    background-color: #26292d; 
     font-family: 'Quicksand', sans-serif;
 }
-
+.footer p{
+    font-size: 18px;
+    color: gray;
+    position: relative;
+    padding: 0 50px;
+    
+}
+.footer img{
+    position: relative;
+    right: 50px;
+    padding: 8px;
+    float: right;
+    
+}

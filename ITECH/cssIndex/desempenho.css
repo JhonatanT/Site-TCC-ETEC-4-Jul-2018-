@@ -1,20 +1,45 @@
 body{
     background-color: #202225;
     overflow-x: hidden;
-}
-footer p{
-    text-align: center;
-    font-family: 'Quicksand', sans-serif;
-    color: white;
-}
-footer{
-    left: 5%;
-    width: 100%;
     margin: auto;
-	position: absolute;
-	bottom: 0;
 }
+
 .piechart{
     width: 900px;
     height: 500px;
+}
+.topo{
+    position: relative;
+    width: 100%;
+    top: -5px;
+    display: block;
+}
+h1{
+    text-align: center;
+    color: white;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 24px;
+}
+.divisor{
+    position: relative;
+    margin: auto;
+    width: 100%; 
+    border-top: 1px solid #363638;
+    display: block;
+}
+#canvas-container{
+    position: relative;
+    width: 50%;
+    display: block;
+    margin: auto;
+    left: 10px;
+    top: 100px;
+}
+#chart{
+    position: relative;
+    width: 500px;
+    height: 350px;
+    display: block;
+    margin: auto;
+    left: 10px;
 }

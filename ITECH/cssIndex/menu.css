@@ -1,16 +1,14 @@
 *{
     padding: 0;
-    font-family: sans-serif;
-    
 }
 
 .container{
     cursor: pointer;
     width: 60px;
     height: 50px;
-    position: fixed;
-    z-index: 501;
+    position: relative;
     left: -2px;
+    z-index: 501;
 }
 /*tamanho das linhas*/
 .bar1, .bar2, .bar3 {
@@ -21,7 +19,7 @@
     background-color: #fffefe;
     transition: 0.4s;
     margin: 6px;
-    margin-left: 10px;
+    margin-left: 11px;
 }
 
 .change .bar1 {
@@ -48,25 +46,23 @@
 
 #check{
     display: none;
-	
 }
 
 #check:checked ~ .menu{
 	/* tamanho opções */
-    width: 250px;
+    width: 230px;
 }
 
 .menu{
     position: fixed;
     width: 54px;
-    height: 800px;
+    height: 835px;
     background: #336699; /* cor menu lateral */
     transition: all 500ms cubic-bezier(1,0,0,1);
     transition-timing-function: cubic-bezier(1,0,0,1);
-    left: -2px;
     overflow: hidden;
     z-index: 500;
-    top: -7px;
+    top: -67px;
     
 }
 .menu li{
@@ -87,15 +83,6 @@
 	color: white;
 	text-decoration: none;
     font-family: 'Quicksand', sans-serif;
-}
-
-.menu::-webkit-scrollbar {
-	width: 8px;
-}
-
-.menu::-webkit-scrollbar-thumb {
-	background: rgba(255,255,255, .2);
-	border-radius: 5px;
 }
 .menu li a{
     padding: 0 22px;
