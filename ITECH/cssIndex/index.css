@@ -1,80 +1,47 @@
-/* imagem de fundo  */
+*{ 
+    margin: 0; 
+    padding: 0; 
+}
+
 body{  
-margin: 0;
-background: url(../pictures/fundo.png) fixed center; 
-background-image: url(../pictures/fundo.png); 
-background-attachment: fixed; 
-background-position: center; 
+    background: url(../pictures/fundo.png) fixed center; 
+    background-image: url(../pictures/fundo.png); 
 }
 
 
 .link{ 
-color: white; 
+    color: white; 
 }
 
 .block{  
-display: block; 
+    display: block; 
 }
 
 .centralizado{ 
-color: white; 
-font-weight: bolder; 
-font-size: 50px; 
-margin-left: 50px
+    color: white; 
+    font-weight: bolder; 
+    margin-left: 50px;
+    font-family: 'Quicksand', sans-serif;
 }
 
 .centralizadoEscuro{ 
 color: white; 
 font-weight: bolder; 
 font-size: 50px; 
-margin-left: 50px
+margin-left: 50px;
+    font-family: 'Quicksand', sans-serif;
 }
-.p{ 
-color: white; 
-font-size: 20px; 
+p{ 
+    color: white; 
+    font-size: 20px; 
+    font-family: 'Quicksand', sans-serif;
+    text-align: justify;
 }
 .centro{
 margin: 0 auto; 
 width: 50%; 
 }
-.formulario{ 
-width: 50%; 
-height: 350px; 
-padding: 15px; 
-font-family: verdana; 
-border-top: 6px solid white;
-color: white; 
-}
-input[type=text]{ 
-width: 100%; 
-padding: 12px 20px; 
-box-sizing: border-box; 
-outline: none; 
-border: 2px solid #ccc; 
-border-radius: 6px; 
-font-family: verdana; 
-resize: none;
 
-}
-input[type=text]:focus { 
-border: 2px solid #0066cc; 
-transition: 0.6s; 
-}
-input[type=submit]{ 
-background: #0066cc; 
-color: white; 
-border: none; 
-padding: 15px; 
-font-family: verdana; 
-font-size: 1em; 
-margin: 8px 0; 
-text-align: center; 
-width: 100%; 
-border-radius: 6px; 
-}
-input[type=submit]:focus { 
-background: #1a2028; 
-}
 .escuro{ 
 background-color: #1a2028; 
 color: white;
@@ -128,5 +95,64 @@ a.botao{
 a.botaocessar:hover{
     background-color: #1a2028;
 }
+ul li a{
+    font-family: 'Quicksand', sans-serif;
+}
+h1{
+    font-family: 'Quicksand', sans-serif;
+}
+.slider {
+     display: block;
+     height: 293px;
+     width: 600px;
+     margin: auto;
+     margin-top: 20px;
+     position: relative;
+ }
+
+ .slider li {
+     list-style: none;
+     position: absolute;
+ }
+
+ .slider img {
+     margin: auto;
+     height: 100%;
+     width: 100%;
+     vertical-align: top;
+ } 
+.slider input {
+    display: none;
+}
+.slider label {
+    background-color: #000;
+    bottom: 10px;
+    cursor: pointer;
+    display: block;
+    height: 10px;
+    position: absolute;
+    width: 10px;
+    z-index: 10;
+}
+.slider li:nth-child(1) label {
+    left: 10px;
+}
+.slider li:nth-child(2) label {
+    left: 40px;
+}
+.slider li:nth-child(3) label {
+    left: 70px;
+} 
+ .slider img {
+     opacity: 0;
+     visibility: hidden;
+ }
+
+ .slider li input:checked ~ img {
+     opacity: 1;
+     visibility: visible;
+     z-index: 10;
+ }
+
 
 
