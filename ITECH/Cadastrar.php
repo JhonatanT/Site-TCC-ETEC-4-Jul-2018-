@@ -7,7 +7,6 @@
 
     mysqli_select_db($conexao, $bd) or die(mysqli_error());
 ?>
-<!DocType Html!>
     <html>
         <head>
             <title>Criando um Novo Usuário</title>
@@ -20,7 +19,7 @@
 				//se não vá para o login
                 function Cadastrofailed()
                 {
-                    setTimeout("window.location='Login.html'", 2000);
+                    setTimeout("window.location='Login.php'", 2000);
                 }
             </script>
             
@@ -35,7 +34,7 @@
                 echo "<center>Algun(s) Compo(s) está Vazio</center>";
                 echo "<script>Cadastrofailed()</script>";
             }else {
-                $sql = "INSERT INTO tbUsuario(nome_completo, email, senha, pergunta) values('$Nome', '$Email','$Senha','$Codigo')";
+                $sql = "insert into tbusuario(nome_completo,email,senha,codigo) values('$Nome', '$Email','$Senha','$Codigo');";
                 mysqli_query($conexao, $sql);
                 mysqli_close($conexao);
                 echo "<script>Cadastrosuccessfully()</script>";

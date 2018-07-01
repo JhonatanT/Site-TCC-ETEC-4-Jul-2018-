@@ -50,7 +50,7 @@
                 <br>
                 <br>
             <h1 class="titulo">FALE CONOSCO</h1>
-                    <form name="formPedido" method="post" action="dados.php" >
+                    <form name="formPedido" method="post" action="processa.php" >
                         <input type="text" name="txtEmail" placeholder="Insira o email">
                         <br><br>
                         <input type="text" name="txtNome" placeholder="Insira o nome e sobrenome">
@@ -58,7 +58,7 @@
                         <input type="text" name="txtPedido" placeholder="Insira a mensagem">
                         <br><br>
                         <input type="submit" value="Enviar" name="botaoEnviar">
-                        <input type="button" value="Cancelar" name="botaoCancelar">
+                        <a href = "Index.html"> <input type="button" value="Cancelar" name="botaoCancelar"></a>
                         <br>
                         <br>
                         <br>

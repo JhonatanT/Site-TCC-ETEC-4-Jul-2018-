@@ -7,8 +7,36 @@ id_usuario int not null auto_increment,
 nome_completo varchar(50) not null,
 email varchar(50)not null,
 senha varchar(50) not null,
+codigo varchar(10) not null,
 primary key(id_usuario)
 )default charset = utf8;
+
+insert into tbusuario(nome_completo,email,senha,codigo)
+values
+('Itech Force','t@gmail.com','1234','123');
+
+insert into tbusuario(nome_completo,email,senha,codigo)
+values
+('Jhonatan','jhol@gmail.com','123','123');
+
+ create table TbAcertoErro(
+ id_usu int auto_increment,
+ nome_usu varchar(50) not null,
+ acerto int(20) not null, 
+ erro int(20)not null,
+primary key(id_usu)
+)default charset = utf8;
+
+
+select* from tbusuario;
+
+update TbAcertoErro set acerto = '0' WHERE id_usu ='1';
+update TbAcertoErro set erro = '0' WHERE id_usu ='1';
+
+INSERT INTO TbAcertoErro(acerto, erro, nome_usu) values('5', '6', 'Itech Force');
+INSERT INTO TbAcertoErro(acerto, erro, nome_usu) values('6', '5', 'Jhonatan');
+
+
 
 create table if not exists tbDisciplina(
 id_disciplina int auto_increment,
@@ -69,9 +97,7 @@ foreign key (cod_disciplina) references tbDisciplina(id_disciplina)
 )default charset = utf8;  
 
 
-insert into tbusuario(nome_completo,email,senha)
-values
-('Itech Force','t@gmail.com','1234');
+
 
 insert into tbDisciplina(disciplinas)
 values
@@ -3085,7 +3111,6 @@ SELECT Q.id_questao, Q.edicao,Q.banca,Q.enunciado,M.temas,Q.caminho,Q.nome_image
 INNER JOIN tbMateria AS M ON Q.cod_materia = M.id_materia 
 LEFT JOIN tbAlternativa AS A ON  A.cod_questao = Q.id_questao
 WHERE M.id_materia = 1 ORDER BY Q.id_questao;                        
- 
 
 
 
