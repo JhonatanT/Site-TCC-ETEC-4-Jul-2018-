@@ -1,21 +1,20 @@
 body{
     background: #202225;
     overflow-x: hidden;
-    margin: auto;
 }
 
-.tudo{
+.topicos{
     position: relative;
     margin: auto;
-    width: 54%;
+    width: 70%;
     height: auto;
     left: 50px;
 }
-.tudo h2{
+h2{
     font-family: 'Quicksand', sans-serif;
     color: white;
 }
-.tudo p{
+p{
     font-family: 'Quicksand', sans-serif;
     padding: 0 20px;
     color: white;
@@ -39,12 +38,12 @@ footer p{
 .topicos a:hover{
     text-decoration: underline;
 }
-.separador {
+.separador{
     position: relative;
     top: 10px;
     margin: auto;
     width: 100%; 
-    border-top: 2px solid #363638;
+    border-top: 1px solid #363638;
 }
 h1{
     color: white;
@@ -53,4 +52,11 @@ h1{
     top: 25px;
     position: relative;
     left: 15px;
+}
+.topo{
+    background-color: white;
+    width: 100%;
+    position: relative;
+    height: 50px;
+    
 }

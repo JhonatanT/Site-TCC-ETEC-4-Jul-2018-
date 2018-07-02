@@ -20,7 +20,7 @@ footer p{
 }
 
 
-#provas{
+.provas{
     position: relative;
     top: 30px;
     width: 60%;
@@ -28,7 +28,7 @@ footer p{
     margin: auto;
     left: 30px;
 }
-#provas ul li{
+.provas ul li{
     list-style: none;
     color: white;
     font-family: 'Quicksand', sans-serif;
@@ -36,7 +36,7 @@ footer p{
     font-size: 20px;
     margin-left: 2%;
 }
-#provas ul li button{
+.provas ul li button{
     float: right;
     margin-left: 10px;
     margin-top: 11px;

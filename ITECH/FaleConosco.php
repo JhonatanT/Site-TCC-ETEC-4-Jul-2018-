@@ -34,7 +34,6 @@
                             <li><a href = "perfil.php" title="Perfil de úsuario"><?php echo $_SESSION['usuarioNome']; ?></a><span class="icon-user"></span> </li>
                             <li><a href = "materias.php" title="Inicio"><span class="icon-lab"></span> Matérias</a></li>
                             <li><a href = "DESEMPENHO.php" title="Desempenho"><span class="icon-chart"></span> Desempenho</a></li>
-                            <li><a href = "gabaritos.php" title="Gabaritos"><span class="icon-checkmark"></span> Gabaritos</a></li>
                             <li><a href = "enem.php" title="Enem"><span class="icon-open-book"></span> Enem</a></li>
                             <li><a href = "redacao.php" title="Redação"><span class="icon-lightbulb_outline"></span> Dicas para o ENEM</a></li>
                             <li><a href = "pdf.php" title="Pdf's para estudo"><span class="icon-file-pdf-o"></span> PDF para estudos</a></li>
@@ -51,11 +50,11 @@
                 <br>
             <h1 class="titulo">FALE CONOSCO</h1>
                     <form name="formPedido" method="post" action="processa.php" >
-                        <input type="text" name="txtEmail" placeholder="Insira o email">
+                        <input type="text" name="txtEmail" placeholder="E-mail">
                         <br><br>
-                        <input type="text" name="txtNome" placeholder="Insira o nome e sobrenome">
+                        <input type="text" name="txtNome" placeholder="Nome e Sobrenome">
                         <br><br>
-                        <input type="text" name="txtPedido" placeholder="Insira a mensagem">
+                        <input type="text" name="txtPedido" placeholder="Mensagem">
                         <br><br>
                         <input type="submit" value="Enviar" name="botaoEnviar">
                         <a href = "Index.html"> <input type="button" value="Cancelar" name="botaoCancelar"></a>
@@ -65,9 +64,6 @@
                         <br>
                     </form>
                 </div>
-            <footer>
-                <p>Todos os direitos reservados © 2018</p>
-            </footer>
         </div>
         </div>
     </body>	

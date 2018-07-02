@@ -2,8 +2,7 @@
     session_start();//iniciando as variaveis globais
     echo"<style> body{ position: relative; text-align:left; color: white; } </style>";
 ?>
-<!DOCTYPE HTML>
-<html lang="PT-BR">
+<html>
     <head>
         <meta charset="UTF-8">
         <meta name="description" content="">
@@ -37,7 +36,6 @@
                             <li><a href = "perfil.php" title="Perfil de úsuario"><?php echo $_SESSION['usuarioNome']; ?></a><span class="icon-user"></span> </li>
                             <li><a href = "materias.php" title="Inicio"><span class="icon-lab"></span> Matérias</a></li>
                             <li><a href = "DESEMPENHO.php" title="Desempenho"><span class="icon-chart"></span> Desempenho</a></li>
-                            <li><a href = "gabaritos.php" title="Gabaritos"><span class="icon-checkmark"></span> Gabaritos</a></li>
                             <li><a href = "enem.php" title="Enem"><span class="icon-open-book"></span> Enem</a></li>
                             <li><a href = "redacao.php" title="Redação"><span class="icon-lightbulb_outline"></span> Dicas para o ENEM</a></li>
                             <li><a href = "pdf.php" title="Pdf's para estudo"><span class="icon-file-pdf-o"></span> PDF para estudos</a></li>

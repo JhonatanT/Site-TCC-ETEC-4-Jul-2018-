@@ -1,10 +1,8 @@
 
-<!--
 <?Php
     session_start();//iniciando as variaveis globais
     echo"<style> body{ position: relative; text-align:left; color: white; } </style>";
 ?>
--->
 <!DOCTYPE html>
 <html>
     <head>
@@ -35,20 +33,17 @@
                         <div class="bar2 icon-content"></div>
                         <div class="bar3 icon-content"></div>
                     </div>
-                    <input type="checkbox" id="check">
+                    <input type="checkbox" id="check"/>
                     <nav class="menu">	
                         <br>
                         <br>
                         <br>
                         <br>
                         <ul>
-                            <br>
-                            <br>
-                            <br>
+                            
                             <li><a href = "perfil.php" title="Perfil de úsuario"><?php echo $_SESSION['usuarioNome']; ?></a><span class="icon-user"></span> </li>
                             <li><a href = "materias.php" title="Inicio"><span class="icon-lab"></span> Matérias</a></li>
                             <li><a href = "DESEMPENHO.php" title="Desempenho"><span class="icon-chart"></span> Desempenho</a></li>
-                            <li><a href = "gabaritos.php" title="Gabaritos"><span class="icon-checkmark"></span> Gabaritos</a></li>
                             <li><a href = "enem.php" title="Enem"><span class="icon-open-book"></span> Enem</a></li>
                             <li><a href = "redacao.php" title="Redação"><span class="icon-lightbulb_outline"></span> Dicas para o ENEM</a></li>
                             <li><a href = "pdf.php" title="Pdf's para estudo"><span class="icon-file-pdf-o"></span> PDF para estudos</a></li>
@@ -59,6 +54,8 @@
                         </ul>
                     </nav>
                 </header>
+                <div class="topo">
+                </div>
         <div class="topicos">
             <h2>Como baixar e visualizar PDF'S?</h2>
             <p>Para visualizar ou baixar os arquivos em PDF será necessário localizar e clicar em <a href="pdf.php">'PDF para estudo'</a>, que está localizado no menu lateral. Localize a matéria que deseja estudar e clique no botão Visualizar. (Um arquivo em PDF será aberto. Caso deseje baixa-lo, localize a opção Download)</p>
@@ -86,9 +83,6 @@
             </p>
             <div class="separador"></div>
         </div>
-        <footer>
-            <p>Todos os direitos reservados © 2018</p>
-        </footer>
         </div>
     </body>
 </html>
