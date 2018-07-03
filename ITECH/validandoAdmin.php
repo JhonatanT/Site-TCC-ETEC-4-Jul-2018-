@@ -15,7 +15,7 @@
 				//se ele digitou o email certo vá para o painel
                 function loginsuccessfully()
                 {
-                    setTimeout("window.location='painelAdmin.html'", 0);  
+                    setTimeout("window.location='painelAdmin.php'", 0);  
                 }
 				//se não vá para o login
                 function loginfailed()
@@ -61,7 +61,7 @@
                         else
                         {
                             ?>
-                            <center><?php echo"Você não tem uma permissão de um adminstrador!..."; ?></center>
+                            <center><?php echo"Você não tem permissão de um adminstrador!..."; ?></center>
                             <?php
                             echo"<script>loginfailed()</script>";
                         }
