@@ -10,7 +10,7 @@
         <body>
             <div class="tudo">
             <div class="container">
-                <form name="login" method="post" action="acessar.php">
+                <form name="login" method="post" action="validandoAdmin.php">
                     <br>
                     <h1>Administrador</h1><br>
                     <input type="text" name="txtUsuario" placeholder="Usuário">
