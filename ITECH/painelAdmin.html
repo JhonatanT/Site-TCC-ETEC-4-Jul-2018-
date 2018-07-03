@@ -1,0 +1,57 @@
+<html>
+    <head>
+        <title>Painel do Administrador</title>
+        <meta name="description" content="">
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="../itech/cssIndex/painel.css">
+        <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+        <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon"/>
+    </head>
+    <body>
+        <div class="container">
+            <div class="principal">
+                <a href="sair.php"><button class="btnSair">Sair</button></a>
+                <h3>Nome do Administrador: ITECH FORCE</h3>
+                <div class="separador"></div>
+                <br>
+                <p class="titulo">Cadastre novas perguntas</p>
+                <br>
+                <div class="divBusca">
+                    <form method="post">
+                    <input type="text" class="txtBusca" placeholder="Nome da Disciplina"?>
+                    <button class="btnBusca">Buscar</button></form>
+                </div>
+                <p class="subTitulo">Selecione a Materia que corresponde a questão</p>
+                <br>
+                <br>
+                <br>
+                <br>
+                <form method="post" action="perguntas.php">
+                    <label class="texto">Edição</label>
+                    <input type="text" name="txtEdicao" class="txtEdicao"/>
+                    <label class="texto">&nbsp;&nbsp;&nbsp;&nbsp;Banca</label>
+                    <input type="text" name="txtBanca" class="txtEdicao"/>
+                    <label class="texto">&nbsp;&nbsp;&nbsp;&nbsp;Prova</label>
+                    <input type="text" name="txtProva" class="txtEdicao"/>
+                    <br>
+                    <br>
+                    <p align="left">Enunciado</p>
+                    <textarea name="txtEnunciado" class="txtEnunciado"></textarea>
+                    <label class="texto"align="left">Alternativa 1 &nbsp;&nbsp;&nbsp;&nbsp;</label>
+                    <input type="text" name="txtAlternativaUm" class="txtAlternativaUm"/>
+                    <label class="texto"align="left">Alternativa 2 &nbsp;&nbsp;&nbsp;</label>
+                    <input type="text" name="txtAlternativaDois" class="txtAlternativaUm"/>
+                    <label class="texto"align="left">Alternativa 3 &nbsp;&nbsp;&nbsp;</label>
+                    <input type="text" name="txtAlternativaTres" class="txtAlternativaUm"/>
+                    <label class="texto"align="left">Alternativa 4 &nbsp;&nbsp;&nbsp;</label>
+                    <input type="text" name="txtAlternativaQuatro" class="txtAlternativaUm"/>
+                    <br>
+                    <br>
+                    <br>
+                    <input type="submit" name="Cadastrar" class="btnCadastrar" value="Cadastrar"/>
+                </form>       
+            </div>
+        </div>
+    </body>
+</html>
+<!--sna-->
