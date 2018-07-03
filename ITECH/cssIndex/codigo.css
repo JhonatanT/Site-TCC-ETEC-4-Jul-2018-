@@ -1,6 +1,7 @@
 body{
     background-color: #202225; 
     overflow-x: hidden;
+    margin: auto;
 }
 
 .box{
@@ -13,6 +14,7 @@ body{
     text-align: center;
     border: 2px solid #436f99;
     border-radius: 10px;
+    left: 10px;
 }
 
 input[type="text"]{
@@ -74,15 +76,26 @@ button[type="button"]:hover{
 input[type="submit"]:hover{
     background-color: #2d5275;
 }
-footer{
-    position:absolute;
-    bottom:0;
-    width:100%;
-}
-
-footer p{
-    color: white;
-    text-align: center;
+.footer{
+    height: 50px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    background-color: #26292d; 
     font-family: 'Quicksand', sans-serif;
+}
+.footer p{
+    font-size: 18px;
+    color: gray;
+    position: relative;
+    padding: 0 50px;
+    
+}
+.footer img{
+    position: relative;
+    right: 50px;
+    padding: 8px;
+    float: right;
+    
 }
 

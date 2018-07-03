@@ -1,5 +1,3 @@
-
-<DOCTYPE html!>
     <html>
     <head>
         <title>Recuperar senha - Gennius</title>
@@ -23,9 +21,12 @@
 
         <br>
     </div>
-
-    <footer>
-        <p>Todos os direitos reservados © 2018</p>
-    </footer>
+    <div class="footer">
+                <img src="imagens/png/001-tumblr.png">
+                <img src="imagens/png/002-instagram.png">
+                <img src="imagens/png/003-twitter.png">
+                <img src="imagens/png/004-facebook.png">
+                <p>Todos os direitos reservados © 2018</p>
+            </div>
     </body>
-    </html>s
+    </html>

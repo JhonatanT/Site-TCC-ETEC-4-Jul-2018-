@@ -23,7 +23,7 @@
                 </form>
             </div>
             <div class="footer">
-                <img src="imagens/png/001-tumblr.png"/>
+                <img src="imagens/png/001-tumblr.png">
                 <img src="imagens/png/002-instagram.png">
                 <img src="imagens/png/003-twitter.png">
                 <img src="imagens/png/004-facebook.png">

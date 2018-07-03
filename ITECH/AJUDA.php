@@ -55,6 +55,7 @@
                     </nav>
                 </header>
                 <div class="topo">
+                    <p>Central de ajuda Gennnius</p>
                 </div>
         <div class="topicos">
             <h2>Como baixar e visualizar PDF'S?</h2>
@@ -82,6 +83,7 @@
             Abra o menu lateral e clique em "Desempenho" e então visualize todo o seu aproveitamento no Gennius.
             </p>
             <div class="separador"></div>
+            <br>
         </div>
         </div>
     </body>
