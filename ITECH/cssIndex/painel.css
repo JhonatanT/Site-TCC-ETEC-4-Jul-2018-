@@ -1,0 +1,203 @@
+body{
+    margin: 0;
+    background-color: #202225; 
+    font-family: 'Quicksand', sans-serif; 
+}
+.container 
+{
+    width: 100%;
+    height: 100% auto;
+    background-color: transparent;
+    display: flex;
+    margin-bottom: 5%;
+    margin-top: 5%;
+}
+.principal{
+    margin: 0 auto;
+    width: 70%;
+    height:100% auto;
+    border: solid 4px #436f99;
+    border-radius: 10px;
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    
+}
+.separador
+{
+    width: auto;
+    height: 2px;
+    background-color: #436f99;
+    border-radius: 1px;
+}
+.separadorMenor
+{
+    width: 50%;
+    height: 2px;
+    background-color: #436f99;
+    border-radius: 1px;
+}
+h3{
+    color: #436f99;
+    text-align: left;
+    text-transform: uppercase;
+}
+p{
+    color:  white;
+    font-size: 18px;
+}
+.texto{
+    text-align: left;
+    color: white;
+    float: left;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 18px;
+}
+.textoCentro{
+    color: white;
+    font-family: 'Quicksand', sans-serif;
+}
+.titulo{
+    font-size: 25px;
+    color: white;
+    text-transform: uppercase;
+}
+.alternativaUm{
+    padding-top: 20%;
+}
+.btnSair{
+    font-family: 'Quicksand', sans-serif;
+    border-style: none;
+    float: right;
+    margin-top: 1.8%;
+    position: relative;
+    width: 100px;
+    height: 30px;
+    font-size: 18px;
+    background-color: #436f99;
+    color: white;
+    text-align: center; 
+    border-radius: 8px;
+    outline-style: none;
+    outline:  none;
+    cursor: pointer;
+}
+.btnSair:hover{
+    transition: 0.2s;
+    animation-direction: reverse;
+    background-color: #202225;
+    border: solid 2px #436f99;
+    color: white;
+    outline-style: none;
+    outline:  none;
+    cursor: pointer;
+}
+.divBusca{
+    background-color: #202225;
+    border: solid 2px #436f99;
+    border-radius: 1px;
+    width: 300px;
+    height: 32px;
+    padding-left: 4PX;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.txtBusca{
+    float: left;
+    background-color: transparent;
+    padding-right: 15px;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 18px;
+    height: 32px;
+    color: white;
+    border-style: none;
+    outline: none;
+    text-transform: uppercase;
+}
+.btnBusca{
+    border-style: none;
+    float: right;
+    height: 32px;
+    width: 70px;
+    font-weight: bold;
+    background: #436f99;
+    outline: none;
+    color: White;
+    cursor: pointer;
+    border-top-right-radius: 7px;
+    border-bottom-right-radius: 7px;
+}
+.btnCadastrar{
+     font-family: 'Quicksand', sans-serif;
+    border-style: none;
+    float: right;
+    margin-top: 1.8%;
+    position: relative;
+    width: 100px;
+    height: 30px;
+    font-size: 18px;
+    background-color: #436f99;
+    color: white;
+    text-align: center; 
+    border-radius: 8px;
+    outline-style: none;
+    outline:  none;
+    cursor: pointer;
+    margin-bottom: 2%;
+}
+.btnCadastrar:hover{
+    transition: 0.2s;
+    animation-direction: reverse;
+    background-color: #202225;
+    border: solid 2px #436f99;
+    color: white;
+    outline-style: none;
+    outline:  none;
+    cursor: pointer;
+}
+.txtEdicao{
+    float: left;
+    margin-left: 2%;
+    margin-top: -0.5%;
+    background-color: transparent;
+    border-style: none;
+    border: solid 2px white;
+    border-radius: 4px;
+    height: 32px;
+    font-size: 18px;
+    outline: none;
+    padding-left: 5px;
+    color: white;
+}
+.txtEnunciado{
+    float: left;
+    background-color: white;
+    border-style: none;
+    border: solid 2px white;
+    border-radius: 4px;
+    width: 100%;
+    height: 300px;
+    text-align: justify;
+    resize: none;
+    outline: none;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 18px;
+    color: black;
+    display: block;
+    margin-bottom: 2%;
+}
+.txtAlternativaUm{
+    float: left;
+    margin-top: -0.5%;
+    margin-bottom: 2%;
+    background-color: transparent;
+    border-style: none;
+    border: solid 2px white;
+    border-radius: 4px;
+    width: 85%;
+    height: 32px;
+    font-size: 18px;
+    outline: none;
+    padding-left: 5px;
+    color: white;
+}
