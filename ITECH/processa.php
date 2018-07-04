@@ -2,42 +2,48 @@
 <html lang="pt-br">
     <head>
         <meta charset="UTF-8">
-        <title>Mensagem enviada com sucesso</title>
+        <title></title>
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
         <script type="text/javascript">
-                function mensagemUsuario()
-                {
-                    setTimeout("window.location='faleconosco.php'", 2000);  
-                }
-            </script>
-            <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
-            <link rel="stylesheet" href="cssIndex/admin.css">
+
+            function mensagesuccessfully()
+            {
+                setTimeout("window.location='FaleConosco.php'", 3000);
+            }
+
+        </script>
+
+
+
     </head>
     <body>
-        <div class="containerAdmin">
-        <div class="container">
-            <?php
-            $nome = $_POST['txtNome'];
-            $email = $_POST['txtEmail'];
-            $mensagem = $_POST['txtPedido'];
+        <?php
+		$nome = $_POST['txtNome'];
+		$email = $_POST['txtEmail'];
+		$mensagem = $_POST['txtPedido'];
+		
+        require 'vendor/autoload.php';
 
-            require 'vendor/autoload.php';
+        $from = new SendGrid\Email(null, $email);
+        $subject = "Mensagem de contato(GENNIUS)";
+        $to = new SendGrid\Email(null, "genniusItechForce@gmail.com");
+        $content = new SendGrid\Content("text/html", "Olá Itech Force, <br><br>Nova mensagem de contato<br><br>Nome: $nome<br>Email: $email <br>Mensagem: $mensagem");
+        $mail = new SendGrid\Mail($from, $subject, $to, $content);
+        
+        //Necessário inserir a chave
+        $apiKey = 'SG.dK77d8rdQPyAsVR7KYgFKA.AgMVhZU6zL_UVRAp2FgVVBm0W2TWzsimpKfzh5fhzvA';
+        $sg = new \SendGrid($apiKey);
 
-            $from = new SendGrid\Email(null, $email);
-            $subject = "Mensagem de contato(GENNIUS)";
-            $to = new SendGrid\Email(null, "genniusItechForce@gmail.com");
-            $content = new SendGrid\Content("text/html", "Olá Itech Force, <br><br>Nova mensagem de contato<br><br>Nome: $nome<br>Email: $email <br>Mensagem: $mensagem");
-            $mail = new SendGrid\Mail($from, $subject, $to, $content);
+        $response = $sg->client->mail()->send()->post($mail);
 
-            //Necessário inserir a chave
-            $apiKey = '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';
-            $sg = new \SendGrid($apiKey);
+        ?>
+        <script>;
+            swal("Mensagem Envidada com Sucesso", "Clike no Botão OK!", "success");
+        </script>;
+        <?php
 
-            $response = $sg->client->mail()->send()->post($mail);
-            ?>
-            <center><?php echo "Mensagem enviada com sucesso"; ?></center>
-            <?php
-            echo "<script>mensagemUsuario()</script>";
-            echo "<style>
+        echo "<script>mensagesuccessfully()</script>";
+        echo "<style>
                         body
                         {
                             text-align:center;
@@ -47,8 +53,6 @@
                             color: #436f99;
                         }
                         </style>";
-            ?>
-        </div>
-        </div>
+        ?>
     </body>
 </html>

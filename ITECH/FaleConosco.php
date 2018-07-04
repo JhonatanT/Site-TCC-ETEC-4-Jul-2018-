@@ -61,7 +61,6 @@
                         <input type="text" name="txtPedido" placeholder="Mensagem">
                         <br><br>
                         <input type="submit" value="Enviar" name="botaoEnviar">
-                        <a href = "Index.html"> <input type="button" value="Cancelar" name="botaoCancelar"></a>
                         <br>
                         <br>
                         <br>
