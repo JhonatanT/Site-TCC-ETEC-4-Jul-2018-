@@ -4,17 +4,12 @@
         <title>GENNIUS</title>
         <meta charset="UTF-8"/>
         <meta name="descriprion" content="">
-        <link rel="stylesheet" href="../ITECH/cssIndex/estilo2.css">
         <link rel="stylesheet" href="../ITECH/cssIndex/index.css">
-        <link rel="stylesheet" href="../ITECH/cssIndex/nivo-slider.css">
-        <link rel="stylesheet" href="../ITECH/cssIndex/mi-slider.css">
-        <link rel="stylesheet" href="../ITECH/cssIndex/index_style.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon" />
         <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js" type="text/javascript"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-        <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
-        <script src="cssIndex/jquery.nivo.slider.js"></script>
         <script src='cssIndex/script.js'></script>
         <script>
         jQuery(document).ready(function($) {
@@ -29,113 +24,171 @@
         $('#slider').nivoSlider();
         });
         </script>
+<script type="text/javascript">
+function setaImagem(){
+    var settings = {
+        primeiraImg: function(){
+            elemento = document.querySelector("#slider a:first-child");
+            elemento.classList.add("ativo");
+            this.legenda(elemento);
+        },
+
+        slide: function(){
+            elemento = document.querySelector(".ativo");
+
+            if(elemento.nextElementSibling){
+                elemento.nextElementSibling.classList.add("ativo");
+                settings.legenda(elemento.nextElementSibling);
+                elemento.classList.remove("ativo");
+            }else{
+                elemento.classList.remove("ativo");
+                settings.primeiraImg();
+            }
+
+        },
+
+        proximo: function(){
+            clearInterval(intervalo);
+            elemento = document.querySelector(".ativo");
+
+            if(elemento.nextElementSibling){
+                elemento.nextElementSibling.classList.add("ativo");
+                settings.legenda(elemento.nextElementSibling);
+                elemento.classList.remove("ativo");
+            }else{
+                elemento.classList.remove("ativo");
+                settings.primeiraImg();
+            }
+            intervalo = setInterval(settings.slide,4000);
+        },
+
+        anterior: function(){
+            clearInterval(intervalo);
+            elemento = document.querySelector(".ativo");
+
+            if(elemento.previousElementSibling){
+                elemento.previousElementSibling.classList.add("ativo");
+                settings.legenda(elemento.previousElementSibling);
+                elemento.classList.remove("ativo");
+            }else{
+                elemento.classList.remove("ativo");                     
+                elemento = document.querySelector("a:last-child");
+                elemento.classList.add("ativo");
+                this.legenda(elemento);
+            }
+            intervalo = setInterval(settings.slide,4000);
+        },
+
+        legenda: function(obj){
+            var legenda = obj.querySelector("img").getAttribute("alt");
+            document.querySelector("figcaption").innerHTML = legenda;
+        }
+
+    }
+
+    //chama o slide
+    settings.primeiraImg();
+
+    //chama a legenda
+    settings.legenda(elemento);
+
+    //chama o slide à um determinado tempo
+    var intervalo = setInterval(settings.slide,4000);
+    document.querySelector(".next").addEventListener("click",settings.proximo,false);
+    document.querySelector(".prev").addEventListener("click",settings.anterior,false);
+}
+
+window.addEventListener("load",setaImagem,false);
+</script>
     </head>
     <body>
         <header id="hader">
             <nav>
                 <ul class="menu">
-                    <a class="scroll" href='#banner'><li class="inicio">INÍCIO
-                    <ul class="submenu">
-                        <a class="scroll" href='#Sobre'><li>SOBRE</li></a>
-                        <a class="scroll" href='#Projetos'><li>PROJETOS</li></a>
-                        <a class="scroll" href='#Clientes'><li>CLIENTES</li></a>
-                    </ul>
-                    </li></a>
-                    <a href = "DESEMPENHO.html"><li>DESEMPENHO</li></a>
-                    <a href = "EXERCICIOS.HTML"><li>EXERCÍCIOS</li></a>
+                    <a class="scroll" href='#banner'><li class="inicio">INÍCIO &nbsp</li></a>
+                    <a class="scroll" href='#beneficios'><li>BENEFICIOS &nbsp</li></a>
+                    <a class="scroll" href='#funcionalidades'><li>FUNCIONALIDADES &nbsp</li></a>
                 </ul>
                 <a class="scroll" href='#banner'><img id='logo' src='pictures/logo.png' alt="logo gennius"></a>
                 <ul class="menu">
-                    <a href = "VESTIBULARES.html"><li>VESTIBULARES</li></a>
                     <a href = "ajudaindex.html"><li>AJUDA</li></a>
-<<<<<<< HEAD
-                    <a href = "FaleConoscoIndex.php"><li>FALE CONOSCO</li></a>
-=======
-                    <a href = "FaleConosco.php"><li>FALE CONOSCO</li></a>
->>>>>>> dfb890a6ea207345e0da21196fe30c5f3b2dc5f6
+                    <a href = "FaleConoscoIndex.html"><li>FALE CONOSCO</li></a>
+                    <a class="scroll" href='#Sobre'><li>SOBRE</li></a>
                 </ul>
-                <a href = "Login.html" class="botao">Entrar</a>
+                <a href="Login.php"><button>Entrar</button></a>
             </nav>
         </header>
         <section id="banner">
         </section>
         <div id="main">
-            <div class="w3-container containerLogo" id="Sobre">
+            <div class="w3-container containerLogo" id="beneficios" >
             </div>
 
             <div class="w3-container escuro" align="left">
                 <br><br>
-                <h1 class=" w3-container centralizadoEscuro">SOBRE NÓS</h1>
                 <div class="w3-container centro p" align="center">
-                    <p>Somos uma empresa tecnológica focada no desenvolvimento<br> 
-                    de softwares, desginer de sites e manutenção de computadores.<br> 
-                    Fundada em 2017, atende com dedicação e compromentimento,<br>
-                    visando uma parceria íntegra e ética para com seus clientes<br>
-                    garantindo o melhor serviço do ramo tecnológico</p>
+                    <h2>Só no gennius você consegue estudar de uma forma muito simples</h2>
+                    <p>Gennius é uma nova plataforma que te ajuda a estudar e sei la mais o qu</p>
+                    <p>Gennius é uma nova plataforma que te ajuda a estudar e sei la mais o qu</p>
+                    <p>Gennius é uma nova plataforma que te ajuda a estudar e sei la mais o qu</p>
+                    <p>Gennius é uma nova plataforma que te ajuda a estudar e sei la mais o qu</p>
+                    <p>Gennius é uma nova plataforma que te ajuda a estudar e sei la mais o qu</p>
+                    <p>Gennius é uma nova plataforma que te ajuda a estudar e sei la mais o qu</p>
+                    <p>Gennius é uma nova plataforma que te ajuda a estudar e sei la mais o qu</p>
+                    <p>Gennius é uma nova plataforma que te ajuda a estudar e sei la mais o qu</p>
+                    <p>Gennius é uma nova plataforma que te ajuda a estudar e sei la mais o qu</p>
+                    <p>Gennius é uma nova plataforma que te ajuda a estudar e sei la mais o qu</p>
+                    <p>Gennius é uma nova plataforma que te ajuda a estudar e sei la mais o qu</p>
+                    <p>Gennius é uma nova plataforma que te ajuda a estudar e sei la mais o qu</p>
+                    <a href="Login.php"><button class="btnbeneficios">Faça login e confira</button></a>
 
-                    <p>Qual o significado de ITech Force?</p>
-
-                    <p>I: Inteligência.
-                    Tech: Tecnologia.
-                    Force: Força.</p>
-                </div>
-            </div>
-
-            <div class="w3-container containerLogo" id="Projetos" >
-            </div>
-            <div class="w3-container claro">
-                <br><br>
-                <h1 class="w3-container centralizado" >PROJETOS</h1>
-                <div class="w3-container centro p">
-                    <p>Estamos desenvolvendo um projeto intitulado como <strong>GENIUS</strong>, onde ajudamos pessoas<br> 
-                    que querem estudar, mas não tem acesso a internet,<br> 
-                    ou não sabem o que estudar. O projeto é voltado para estudos de<br>
-                    vestibulares/vestibulinhos como por exemplo:
-                    <strong> ENEM, FUVEST, SENAI e ETEC.</strong><br>
-                    Esses são os vestibulares iniciais, <br>
-                    O programa ainda está em fase de desenvolvimento, então estamos desenvolvendo as funcionalidades do mesmo.<br>
-                    <br><br>
-                    Veja a interface gráfica dele:<br><br>
-                
-                <ul class="slider">
-                     <li>
-                           <input type="radio" id="slide1" name="slide" checked>
-                           <label for="slide1"></label>
-                           <img src="imagens/nao_fuja_tema.png" />
-                     </li>
-                     <li>
-                           <input type="radio" id="slide2" name="slide">
-                           <label for="slide2"></label>
-                           <img src="imagens/nao_fuja_tema.png" />
-                     </li>
-                     <li>
-                           <input type="radio" id="slide3" name="slide">
-                           <label for="slide3"></label>
-                           <img src="imagens/assista_filmes.png" />
-                     </li>
-                </ul>
                 </div>
                 <br><br><br>
             </div>
 
-            <div class="w3-container containerLogo" id="Clientes" >
+            <div class="w3-container containerLogo" id="funcionalidades" >
             </div>
-            <div class="w3-container escuro">
-                <h1 class="w3-container centralizadoEscuro">CLIENTES</h1>
-                <div class="w3-container centro p">
-                    <p>A nossa empresa tem como público alvo pessoas <br> 
-                    interessadas em softwares,manutenção e Design de sites<br> 
-                    para sua empresa, projetos pessoais ou academicos.<br><br>
-                    <strong>Porque nos contratar?</strong><br><br>
-                    Somos uma empresa constituida por seis<br>
-                    desenvolvedores profissionais esforçados, com foco e<br>
-                    compromentimento em cada projeto que desenvolvemos,<br>
-                    procurando sempre o melhor para nossos clientes.</p>
-                    <br><br>
-                    <p>O publico do projeto Genius são: estudantes de ensino médio,<br> 
-                    adultos e patrocinadores que queiram ajudar com a continuação de nosso projeto.</p> 
+            <div class="w3-container claro" align="left">
+                <br><br>
+
+                        <figure>
+                            <span class="trs next"></span>
+                            <span class="trs prev"></span>
+
+                            <div id="slider">
+                                <a href="#" class="trs"><img src="pictures/Sem%20t%C3%ADtulo.png" alt="Provas do enem separadas por cores e anos" /></a>
+                                <a href="#" class="trs"><img src="pictures/redacao.png" alt="Dicas para o Enem" /></a>
+                                <a href="#" class="trs"><img src="pictures/pdf.png" alt="Acesso a materiais para estudo" /></a>
+                            </div>
+
+   <figcaption></figcaption>
+                                </figure>
+                    </div>
+                </div>
+                <br><br><br>
+
+            <!--topo do Clientes-->
+            
+        <div class="w3-container containerLogo" id="Sobre" >
+        </div>
+
+        <div class="w3-container escuro" align="left">
+        <br>
+        <br>
+            <div class="w3-container centro p" align="center">
+                <p>Gennius foi fundada em 2017 na cidade de São Paulo, por sete desenvolvedores, com a missão de levar conhecimento e estudo de uma forma simplificada, para pessoas de todas idades e de todos os lugares.<br>
+                O projeto conta com uma versão online onde se encontrará diversos conteudos e ferramentas para estudar de uma forma agradável e eficiente. E também conta com a versão offline onde terá acesso a todo conteúdo do site e muito mais.</p>
+                <h3>Para saber mais sobre nós, siga-nos nas redes sociais</h3>
+                <div class="wrapper">
+                    <i class="fa fa-5x fa-facebook-square"></i>
+                    <i class="fa fa-5x fa-twitter-square"></i>
+                    <i class="fa fa-5x fa-github-square"></i>
+                    <i class="fa fa-5x fa-snapchat-square"></i>
                 </div>
             </div>
+            <br>
+            <br>
+            <br>
         </div>
     </body>
 </html>

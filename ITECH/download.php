@@ -22,6 +22,7 @@
         </script>
         <div class="tudo">
         <header class="cabecalho1">
+            <br>
             <div class="container"onclick="document.getElementById('check').checked = !document.getElementById('check').checked; myFunction(this)" >
                 <div class="bar1 icon-content"></div>
                 <div class="bar2 icon-content"></div>
@@ -29,6 +30,9 @@
             </div>
             <input type="checkbox" id="check">
             <nav class="menu">	
+                <br>
+                <br>
+                <br>
                 <br>
                 <br>
                 <br>
@@ -53,7 +57,7 @@
                 <p class="descricao">Você é estudante? Precisa de uma ajuda para estudar? Apresentamos o Gennius, um software criado para auxiliar você nos estudos. Com duas versões disponíveis, a offline e a online, direcionamos o melhor em relação a conhecimentos gerais para diversos vestibulares, tais como: ENEM, FUVEST, FATEC, UNESP, UNIFESP, UFRJ, UFMG e todos os principais meios de acesso a universidades públicas e privadas.</p>
                 <button class="botao">Download para Windows</button>
                 <p class="termos">
-                    Ao fazer o download, você concorda com os <a href="">Termos e Condições</a>.
+                    Ao fazer o download, você concorda com os <a href="termos.html">Termos e Condições</a>.
                 </p>
             </div>
             <footer>

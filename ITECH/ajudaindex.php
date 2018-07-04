@@ -1,6 +1,6 @@
 <html>
     <head>
-        <title>Ajuda Gennius</title>
+        <title>Central de ajuda Gennius</title>
         <meta charset="UTF-8"/>
         <link rel="stylesheet" type="text/css" href="cssIndex/Ajudaindex.css"/>
         <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
@@ -11,7 +11,7 @@
         <div class="tudo">
             <div class="topo">
                     <h3>Central de ajuda Gennius</h3>
-                <a href=""><button>Voltar ao site</button></a>
+                <a href="index.html"><button>Voltar ao inicio</button></a>
                 </div>
            
             <div id="ajuda">

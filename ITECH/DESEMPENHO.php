@@ -31,11 +31,10 @@ $acerto = $_SESSION['acerto'];
     <head>
         <meta charset="UTF-8">
         <meta name="description" content="">
-        <title>Desempenho</title>
+        <title>Desempenho - Gennius</title>
         <link rel="stylesheet" href="../ITECH/cssIndex/desempenho.css">
         <link rel="stylesheet" href="../ITECH/cssIndex/menu.css">
         <link rel="stylesheet" href="../ITECH/style.css">
-        <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
         <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon" />
         <script type="text/javascript" src="jquery-1.12.0.min.js"></script>
         <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
@@ -83,6 +82,8 @@ $acerto = $_SESSION['acerto'];
         </script>
             <div class="content-all">
                 <header class="cabecalho1">
+                    <br>
+                    <br>
                     <div class="container" onclick="document.getElementById('check').checked = !document.getElementById('check').checked; myFunction(this)">
                         <div class="bar1 icon-content"></div>
                         <div class="bar2 icon-content"></div>
@@ -90,6 +91,9 @@ $acerto = $_SESSION['acerto'];
                     </div>
                     <input type="checkbox" id="check">
                     <nav class="menu">	
+                        <br>
+                        <br>
+                        <br>
                         <br>
                         <br>
                         <br>

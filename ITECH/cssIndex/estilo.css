@@ -6,8 +6,8 @@ body{
 .formulario{
     margin: auto;
     position: relative;
-    top: 80px;
-    width: 35%;
+    top: 120px;
+    width: 500px;
     height: auto;
     background-color: #202225;
     text-align: center;
@@ -37,18 +37,6 @@ input[type="text"] {
 }
 input[type="text"]:focus { 
 border-bottom: 2px solid #436f99;
-}
-
-footer{
-    position:absolute;
-    width:100%;
-    bottom: 0;
-}
-
-footer p{
-    color: white;
-    text-align: center;
-    font-family: 'Quicksand', sans-serif;
 }
 
 input[type="button"]{
@@ -81,5 +69,27 @@ input[type="submit"]:hover{
 }
 input[type="button"]:hover{
      background-color: #2d5275;   
+}
+.footer{
+    height: 50px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    background-color: #26292d; 
+    font-family: 'Quicksand', sans-serif;
+}
+.footer p{
+    font-size: 18px;
+    color: gray;
+    position: relative;
+    padding: 0 50px;
+    
+}
+.footer img{
+    position: relative;
+    right: 50px;
+    padding: 8px;
+    float: right;
+    
 }
 

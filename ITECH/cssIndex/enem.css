@@ -7,23 +7,11 @@ body{
     text-align: center;
     color: white;
 }
-footer{
-    bottom:0;
-    width:100%;
-}
-
-footer p{
-    text-align: center;
-    position: relative;
-    color: white;
-    font-family: 'Quicksand', sans-serif;
-}
-
 
 .provas{
     position: relative;
     top: 30px;
-    width: 60%;
+    width: 70%;
     height: auto;
     margin: auto;
     left: 30px;
@@ -103,5 +91,5 @@ footer p{
 h2{
     font-family: 'Quicksand', sans-serif;
     color: white;
-    font-size: 25px;    
+    font-size: 25px; 
 }

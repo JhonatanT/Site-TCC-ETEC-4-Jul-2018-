@@ -77,7 +77,8 @@ button[type="button"]{
     border: none;
     font-size: 17px;
     margin-bottom: 2%;
-    font-family: 'Quicksand', sans-serif;    
+    font-family: 'Quicksand', sans-serif;  
+    cursor: pointer;
 }
 
 button[type="button"]:hover{

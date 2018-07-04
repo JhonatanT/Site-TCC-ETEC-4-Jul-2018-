@@ -6,7 +6,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="description" content="">
-        <title>Enem</title>
+        <title>Provas do enem - Gennius</title>
         <link rel="stylesheet" href="../ITECH/cssIndex/enem.css">
         <link rel="stylesheet" href="../ITECH/cssIndex/menu.css">
         <link rel="stylesheet" href="../ITECH/style.css">
@@ -21,6 +21,7 @@
     <body>
         <div class="content-all">
             <header class="cabecalho1">
+                <br>
                 <div class="container" onclick="document.getElementById('check').checked = !document.getElementById('check').checked; myFunction(this)">
                     <div class="bar1 icon-content"></div>
                     <div class="bar2 icon-content"></div>
@@ -28,6 +29,9 @@
                 </div>
                 <input type="checkbox" id="check"/>
                 <nav class="menu">	
+                <br>
+                <br>
+                <br>
                 <br>
                 <br>
                 <br>
@@ -194,9 +198,6 @@
                      <li>Prova Cinza- 2º Dia<a href="ENEM/ENEM/2017/2017GabaritoCinzaDia2.pdf"><button class="cinza">Gabarito</button></a><a href="ENEM/ENEM/2017/2017ProvaCinzaDia2.pdf"><button class="cinza">Prova</button></a></li>
                 </ul>
                 </div>
-                <footer>
-                    <p>Todos os direitos reservados © 2018</p>
-                </footer>
             </div>
     </body>
 </html>

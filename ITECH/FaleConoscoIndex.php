@@ -1,7 +1,7 @@
 <!Doctype Html>
 <html>
     <head>
-        <title>GENNIUS - Fale Conosco</title>
+        <title>Fale Conosco - Gennius</title>
         <meta charset="UTF-8"/>
         <meta name="description" content="">
         <link rel="stylesheet" href="../ITECH/cssIndex/estilo.css">
@@ -13,23 +13,34 @@
             <br>
             <br>
             <div class="formulario">
+                <br>
             <h1 class="titulo">FALE CONOSCO</h1>
-                    <form name="formPedido" method="post" action="dados.php" >
-                        <input type="text" name="txtEmail" placeholder="Insira o email">
-                        <br><br>
-                        <input type="text" name="txtNome" placeholder="Insira o nome e sobrenome">
-                        <br><br>
-                        <input type="text" name="txtPedido" placeholder="Insira a mensagem">
-                        <br><br>
-                        <input type="submit" value="Enviar" name="botaoEnviar">
-                        <input type="button" value="Cancelar" name="botaoCancelar">
-                        <br>
-                        <br>
-                    </form>
-                </div>
-            <footer>
+                <br>
+                <form name="formPedido" method="post" action="dados.php" >
+                    <input type="text" name="txtEmail" placeholder="E-mail">
+                    <br>
+                    <br>
+                    <br>
+                    <input type="text" name="txtNome" placeholder="Nome e sobrenome">
+                    <br>
+                    <br>
+                    <input type="text" name="txtPedido" placeholder="Mensagem">
+                    <br>
+                    <br>
+                    <br>
+                    <input type="submit" value="Enviar" name="botaoEnviar">
+                    <a href="index.html"><input type="button" value="Cancelar" name="botaoCancelar"></a>
+                    <br>
+                    <br>
+                </form>
+            </div>
+            <div class="footer">
+                <img src="imagens/png/001-tumblr.png">
+                <img src="imagens/png/002-instagram.png">
+                <img src="imagens/png/003-twitter.png">
+                <img src="imagens/png/004-facebook.png">
                 <p>Todos os direitos reservados © 2018</p>
-            </footer>
+            </div>
         </div>
     </body>	
 </html>

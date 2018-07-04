@@ -16,10 +16,7 @@
             <input type="text" name="codigo" placeholder="Código de segurança"><br>
             <input type="submit" value="Enviar" name="botaoAcessar">
             <button type="button" class="botao"><a href="Login.php">Voltar ao site</a></button>
-
         </form>
-
-        <br>
     </div>
     <div class="footer">
                 <img src="imagens/png/001-tumblr.png">

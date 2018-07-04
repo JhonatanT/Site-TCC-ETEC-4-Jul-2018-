@@ -3,9 +3,11 @@ body{
 }
 
 .tudo{
-    width: 700px;
+    position: relative;
+    width: 900px;
     height: auto;
     margin: auto;
+    left: 30px;
 }
 .tudo h2{
     font-family: 'Quicksand', sans-serif;
@@ -36,4 +38,11 @@ p a{
 }
 p a:hover{
     text-decoration: underline;
+}
+.separador{
+    position: relative;
+    top: 10px;
+    margin: auto;
+    width: 100%; 
+    border-top: 1px solid #363638;
 }

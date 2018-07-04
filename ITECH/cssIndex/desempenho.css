@@ -2,6 +2,8 @@ body{
     background-color: #202225;
     overflow-x: hidden;
     margin: auto;
+    position: relative;
+    top: -10px;
 }
 
 .piechart{
@@ -17,8 +19,8 @@ body{
 h1{
     text-align: center;
     color: white;
-    font-family: 'Quicksand', sans-serif;
     font-size: 24px;
+    font-family: 'Quicksand', sans-serif;
 }
 .divisor{
     position: relative;
