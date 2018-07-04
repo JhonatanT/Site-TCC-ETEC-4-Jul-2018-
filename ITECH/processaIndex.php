@@ -6,7 +6,7 @@
         <script type="text/javascript">
                 function mensagemUsuario()
                 {
-                    setTimeout("window.location='faleconosco.php'", 2000);  
+                    setTimeout("window.location='faleconoscoIndex.php'", 2000);  
                 }
             </script>
             <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">

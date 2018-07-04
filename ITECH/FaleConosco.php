@@ -1,7 +1,7 @@
 <!Doctype Html>
 <html>
     <head>
-        <title>Fale Conosco - Gennius</title>
+        <title>GENNIUS - Fale Conosco</title>
         <meta charset="UTF-8"/>
         <meta name="description" content="">
         <link rel="stylesheet" href="../ITECH/cssIndex/faleconosco.css">
@@ -19,7 +19,6 @@
         </script>
             <div class="content-all">
                 <header class="cabecalho1">
-                    <br>
                     <div class="container" onclick="document.getElementById('check').checked = !document.getElementById('check').checked; myFunction(this)">
                         <div class="bar1 icon-content"></div>
                         <div class="bar2 icon-content"></div>
@@ -27,9 +26,6 @@
                     </div>
                     <input type="checkbox" id="check">
                     <nav class="menu">	
-                            <br>
-                            <br>
-                            <br>
                             <br>
                             <br>
                             <br>
