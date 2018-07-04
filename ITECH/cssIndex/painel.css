@@ -62,8 +62,12 @@ p{
     color: white;
     text-transform: uppercase;
 }
-.alternativaUm{
-    padding-top: 20%;
+.alternativa{
+	float: left;
+    margin-left: 10%;
+	font-family: 'Quicksand', sans-serif;
+	font-size: 18px;
+	color: white;
 }
 .btnSair{
     font-family: 'Quicksand', sans-serif;
@@ -96,7 +100,7 @@ p{
     background-color: #202225;
     border: solid 2px #436f99;
     border-radius: 1px;
-    width: 300px;
+    width: 350px;
     height: 32px;
     padding-left: 4PX;
     border-top-right-radius: 10px;
@@ -109,23 +113,10 @@ p{
     font-family: 'Quicksand', sans-serif;
     font-size: 18px;
     height: 32px;
-    color: white;
+    color: #436f99;
     border-style: none;
     outline: none;
     text-transform: uppercase;
-}
-.btnBusca{
-    border-style: none;
-    float: right;
-    height: 32px;
-    width: 70px;
-    font-weight: bold;
-    background: #436f99;
-    outline: none;
-    color: White;
-    cursor: pointer;
-    border-top-right-radius: 7px;
-    border-bottom-right-radius: 7px;
 }
 .btnCadastrar{
      font-family: 'Quicksand', sans-serif;
@@ -187,17 +178,49 @@ p{
     margin-bottom: 2%;
 }
 .txtAlternativaUm{
-    float: left;
+	float: left;
     margin-top: -0.5%;
     margin-bottom: 2%;
     background-color: transparent;
     border-style: none;
     border: solid 2px white;
     border-radius: 4px;
-    width: 85%;
+    width: 55%;
     height: 32px;
     font-size: 18px;
     outline: none;
     padding-left: 5px;
     color: white;
+}
+.txtAlternativaDois{
+	float: left;
+    margin-top: -0.5%;
+    margin-bottom: 2%;
+    background-color: transparent;
+    border-style: none;
+    border: solid 2px white;
+    border-radius: 4px;
+    width: 55%;
+    height: 32px;
+    font-size: 18px;
+    outline: none;
+    padding-left: 5px;
+    color: white;
+}
+
+.txtValorUm{
+    float: left;
+    margin-top: -0.5%;
+    margin-bottom: 2%;
+	margin-right: 10%;
+    background-color: transparent;
+    border-style: none;
+    border: solid 2px white;
+    border-radius: 4px;
+    width: 10%;
+    height: 32px;
+    font-size: 18px;
+    outline: none;
+    padding-left: 5px;
+    color: #436f99;
 }
