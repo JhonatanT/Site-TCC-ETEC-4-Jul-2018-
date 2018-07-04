@@ -1,3 +1,7 @@
+<?Php
+    session_start();//iniciando as variaveis globais
+?>
+
 <!Doctype Html>
 <html>
     <head>
