@@ -34,7 +34,7 @@
                     <input name="txtSenha" type="password" placeholder="Senha"/><br>
                     <button type="submit" value="Login" name="botaoAcessar">Entrar</button>
                 </form>
-                <h5><a href="lembrarSenha.html">Esqueceu a senha?</a></h5>
+                <h5><a href="codigo.php">Esqueceu a senha?</a></h5>
             </div>
             <div class="cadastro">
                 <form name="Cadastrar" method="post" action="Cadastrar.php">
