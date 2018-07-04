@@ -1,3 +1,4 @@
+<!--
 <?php
  //coxexao
     $host="localhost";
@@ -11,6 +12,7 @@
     session_start();
 	
 ?>
+-->
 <html>
     <head>
         <title>Painel do Administrador</title>
