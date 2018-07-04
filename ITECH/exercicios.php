@@ -94,6 +94,9 @@
         <meta charset="UTF-8">
         <meta name="description" content="">
         <title>Exercícios - Gennius</title>
+
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
         <link rel="stylesheet" href="../ITECH/cssIndex/exercicio.css">
         <link rel="stylesheet" href="../ITECH/cssIndex/menu.css">
         <link rel="stylesheet" href="../ITECH/style.css">
@@ -116,11 +119,23 @@
                     //se o valor do radio button for igual a 1
 					if($escolha == 1){
 					    $a++;
+?>
+                        <script>;
+                            swal("Você Acertou Parabéns", "Clike no Botão OK!", "success");
+                        </script>;
+<?php
 					}else{
                         $e++;
+?>
+                        <script>;
+                            swal("Você Errou Estude Mais", "Clike no Botão OK!", "error");
+                        </script>;
+<?php
 					}
+
                     $sql = mysqli_query($conexao, "SELECT * FROM TbAcertoErro WHERE id_usu = '$idUsu' LIMIT 1") or die (mysqli_error());
                     $row = mysqli_fetch_assoc($sql);
+
                     if ($row > 0){
                         $sqlA = "update TbAcertoErro set acerto = '$a' WHERE id_usu ='$idUsu'";
                         $sqlE = "update TbAcertoErro set erro = '$e' WHERE id_usu ='$idUsu'";
@@ -139,8 +154,18 @@
                      //se o valor do radio button for igual a 1
 					if($escolha == 1){
                         $a++;
+?>
+                <script>;
+                    swal("Você Acertou Parabéns", "Clike no Botão OK!", "success");
+                </script>;
+<?php
 					}else{
                         $e++;
+?>
+                <script>;
+                    swal("Você Errou Estude Mais", "Clike no Botão OK!", "error");
+                </script>;
+<?php
 					}
                     $sql = mysqli_query($conexao, "SELECT * FROM TbAcertoErro WHERE id_usu = '$idUsu' LIMIT 1") or die (mysqli_error());
                     $row = mysqli_fetch_assoc($sql);
